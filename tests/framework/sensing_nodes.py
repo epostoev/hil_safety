@@ -79,3 +79,19 @@ class CrashVideoRecorderNode(BaseHILTest):
 
     def __init__(self):
         super().__init__(node_name="crash_video_recorder", timeout=15)
+
+
+class AcruxListener(BaseHILTest):
+    NODE_NAME = "/acrux_listener"
+    PROCESS_NAME = "acrux_driver/lib/acrux_driver/acrux_listener"
+
+    def __init__(self):
+        super().__init__(node_name="acrux_listener", timeout=15)
+
+
+class CameraSynchronizer(BaseHILTest):
+    NODE_NAME = "/camera_synchronizer"
+    PROCESS_NAME = "camera_synchronizer/lib/camera_synchronizer/camera_synchronizer"
+
+    def __init__(self):
+        super().__init__(node_name="camera_synchronizer", timeout=15)

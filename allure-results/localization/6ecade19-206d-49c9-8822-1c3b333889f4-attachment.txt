@@ -1,0 +1,2 @@
+Нода /localization/node_container перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

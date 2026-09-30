@@ -1,0 +1,2 @@
+Нода /perception/camera_tracks_merger перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

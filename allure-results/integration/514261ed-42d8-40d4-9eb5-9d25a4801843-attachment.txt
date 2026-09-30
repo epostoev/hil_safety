@@ -1,0 +1,3 @@
+INFO     /safety/crash_detector:base_hil_test.py:91 === Начало теста для /safety/crash_detector ===
+INFO     /safety/crash_detector:base_hil_test.py:42 Нода /safety/crash_detector жива True
+INFO     /safety/crash_detector:base_hil_test.py:42 Нода /safety/crash_detector жива True

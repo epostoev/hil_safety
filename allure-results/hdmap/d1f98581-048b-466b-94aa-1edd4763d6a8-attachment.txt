@@ -1,0 +1,17 @@
+INFO     dynamic_objects_service_node:base_hil_test.py:91 === Начало теста для dynamic_objects_service_node ===
+INFO     dynamic_objects_service_node:base_hil_test.py:42 Нода /dynamic_objects_service_node жива True
+INFO     dynamic_objects_service_node:base_hil_test.py:42 Нода /dynamic_objects_service_node жива True
+INFO     dynamic_objects_service_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     dynamic_objects_service_node:base_hil_test.py:251 Docker exec: ps aux | grep 'dynamic_objects_service/lib/dynamic_objects_service/dynamic_objects_service_node' | grep -v grep
+INFO     dynamic_objects_service_node:base_hil_test.py:262 Найден PID: 3566259
+INFO     dynamic_objects_service_node:kill_fault_injection.py:82 PID=3566259
+INFO     dynamic_objects_service_node:kill_fault_injection.py:91 Stamp ДО kill: 1790695967.272886664
+INFO     dynamic_objects_service_node:base_hil_test.py:251 Docker exec: kill -6 3566259
+INFO     dynamic_objects_service_node:kill_fault_injection.py:95 kill -6 отправлен PID=3566259. Ждём появления /dynamic_objects_service_node в error_code 131346...
+INFO     dynamic_objects_service_node:kill_fault_injection.py:111 Результат: success=True, reaction=9.983ms (9983453ns), nodes=['/dynamic_objects_service_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     dynamic_objects_service_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     dynamic_objects_service_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     dynamic_objects_service_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/dynamic_objects_service_node","/perception/camera_tracker_cpp","/sen
+INFO     dynamic_objects_service_node:base_hil_test.py:42 Нода /dynamic_objects_service_node жива True
+INFO     dynamic_objects_service_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     dynamic_objects_service_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.983ms

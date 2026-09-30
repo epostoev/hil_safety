@@ -1,0 +1,3 @@
+INFO     acrux_listener:base_hil_test.py:91 === Начало теста для acrux_listener ===
+INFO     acrux_listener:base_hil_test.py:42 Нода /acrux_listener жива True
+INFO     acrux_listener:base_hil_test.py:42 Нода /acrux_listener жива True

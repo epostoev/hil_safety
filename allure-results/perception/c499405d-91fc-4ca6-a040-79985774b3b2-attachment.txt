@@ -1,0 +1,2 @@
+Нода /perception/multimodal_cpp перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

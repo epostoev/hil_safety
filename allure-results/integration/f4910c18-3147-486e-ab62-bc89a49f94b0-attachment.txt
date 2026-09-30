@@ -1,0 +1,2 @@
+Нода /infra/cloud_telemetry_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

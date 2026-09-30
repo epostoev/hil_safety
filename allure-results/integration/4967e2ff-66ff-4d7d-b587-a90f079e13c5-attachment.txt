@@ -1,0 +1,2 @@
+Нода /data_logging/rosbag2_recorder перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

@@ -1,0 +1,16 @@
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:91 === Начало теста для imu_baselink_runtime_calibration ===
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:42 Нода /calibration/rct/imu/imu_baselink_runtime_calibration жива True
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:251 Docker exec: ps aux | grep 'imu_baselink_runtime_calibration/lib/imu_baselink_runtime_calibration/imu_baselink_runtime_calibration' | grep -v grep
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:262 Найден PID: 2673288
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:82 PID=2673288
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:91 Stamp ДО kill: 1790262206.99055827
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:251 Docker exec: kill -6 2673288
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:95 kill -6 отправлен PID=2673288. Ждём появления /calibration/rct/imu/imu_baselink_runtime_calibration в error_code 131346...
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:111 Результат: success=True, reaction=10.006ms (10005994ns), nodes=['/calibration/rct/imu/imu_baselink_runtime_calibration', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:133 Triggered errors: 2
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/calibration/rct/imu/imu_baselink_runtime_calibration","/perception/c
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:42 Нода /calibration/rct/imu/imu_baselink_runtime_calibration жива True
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     imu_baselink_runtime_calibration:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.006ms

@@ -1,0 +1,2 @@
+INFO     detector_3d:base_hil_test.py:91 === Начало теста для detector_3d ===
+INFO     detector_3d:base_hil_test.py:42 Нода /perception/detector_3d жива False

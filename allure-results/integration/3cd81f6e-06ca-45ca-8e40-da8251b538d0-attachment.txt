@@ -1,0 +1,2 @@
+Нода /metrics_aggregator перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

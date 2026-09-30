@@ -1,0 +1,3 @@
+INFO     /sda_process_monitor/sda_process_monitor:base_hil_test.py:91 === Начало теста для /sda_process_monitor/sda_process_monitor ===
+INFO     /sda_process_monitor/sda_process_monitor:base_hil_test.py:42 Нода /sda_process_monitor/sda_process_monitor жива True
+INFO     /sda_process_monitor/sda_process_monitor:base_hil_test.py:42 Нода /sda_process_monitor/sda_process_monitor жива True

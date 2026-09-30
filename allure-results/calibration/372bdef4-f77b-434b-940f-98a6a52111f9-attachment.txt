@@ -1,0 +1,3 @@
+INFO     robot_state_publisher:base_hil_test.py:91 === Начало теста для robot_state_publisher ===
+INFO     robot_state_publisher:base_hil_test.py:42 Нода /robot_state_publisher жива True
+INFO     robot_state_publisher:base_hil_test.py:42 Нода /robot_state_publisher жива True

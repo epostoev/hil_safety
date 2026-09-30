@@ -1,0 +1,4 @@
+INFO     mpc:base_hil_test.py:91 === Начало теста для mpc ===
+INFO     mpc:base_hil_test.py:42 Нода /control/mpc жива True
+INFO     mpc:base_hil_test.py:42 Нода /control/mpc жива True
+INFO     mpc:base_hil_test.py:42 Нода /control/mpc жива True

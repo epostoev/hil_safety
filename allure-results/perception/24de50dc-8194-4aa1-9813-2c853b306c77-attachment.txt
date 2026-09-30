@@ -1,0 +1,5 @@
+success:      True
+error_code:   0x00020112 (131346)
+nodes:        ['/perception/radar_static_obstacles_detector', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+reaction_ms:  11.591ms
+reaction_ns:  11591155ns

@@ -1,0 +1,2 @@
+Нода /sensing/roi_selector перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

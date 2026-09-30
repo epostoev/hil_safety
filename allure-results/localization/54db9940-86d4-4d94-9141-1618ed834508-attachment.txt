@@ -1,0 +1,18 @@
+INFO     /localization/node_container:base_hil_test.py:91 === Начало теста для /localization/node_container ===
+INFO     /localization/node_container:base_hil_test.py:42 Нода /localization/node_container жива True
+INFO     /localization/node_container:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     /localization/node_container:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_utils_node_container/lib/sat_utils_node_container/node_container' | grep -v grep
+INFO     /localization/node_container:base_hil_test.py:262 Найден PID: 3632926
+INFO     /localization/node_container:kill_fault_injection.py:82 PID=3632926
+INFO     /localization/node_container:kill_fault_injection.py:91 Stamp ДО kill: 1790697878.370980058
+INFO     /localization/node_container:base_hil_test.py:251 Docker exec: kill -6 3632926
+INFO     /localization/node_container:kill_fault_injection.py:95 kill -6 отправлен PID=3632926. Ждём появления /localization/node_container в error_code 131346...
+INFO     /localization/node_container:kill_fault_injection.py:111 Результат: success=True, reaction=9.966ms (9966269ns), nodes=['/localization/node_container', '/localization/localization', '/localization/lidar_localization', '/localization_initialization_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     /localization/node_container:kill_fault_injection.py:133 Triggered errors: 2
+INFO     /localization/node_container:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     /localization/node_container:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/nav/localization","/localization/node_container","/localization/loca
+INFO     /localization/node_container:base_hil_test.py:42 Нода /localization/node_container жива True
+INFO     /localization/node_container:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     /localization/node_container:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.966ms
+INFO     /localization/node_container:base_hil_test.py:94 === Завершение теста для /localization/node_container ===
+INFO     /localization_output_gateway_node:base_hil_test.py:94 === Завершение теста для /localization_output_gateway_node ===

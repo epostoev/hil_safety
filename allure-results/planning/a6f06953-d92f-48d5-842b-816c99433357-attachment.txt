@@ -1,0 +1,8 @@
+INFO     planning_visualization_node:base_hil_test.py:91 === Начало теста для planning_visualization_node ===
+INFO     planning_visualization_node:base_hil_test.py:42 Нода /planning/visualization/planning_visualization_node жива True
+INFO     planning_visualization_node:base_hil_test.py:42 Нода /planning/visualization/planning_visualization_node жива True
+INFO     planning_visualization_node:base_hil_test.py:94 === Завершение теста для planning_visualization_node ===
+INFO     path_loader_node:base_hil_test.py:94 === Завершение теста для path_loader_node ===
+INFO     trajectory_planner_node:base_hil_test.py:94 === Завершение теста для trajectory_planner_node ===
+INFO     lane_tracer_node:base_hil_test.py:94 === Завершение теста для lane_tracer_node ===
+INFO     maneuver_planner_node:base_hil_test.py:94 === Завершение теста для maneuver_planner_node ===

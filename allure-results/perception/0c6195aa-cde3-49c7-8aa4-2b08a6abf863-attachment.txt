@@ -1,0 +1,2 @@
+Нода /perception/roadworks_fusion перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

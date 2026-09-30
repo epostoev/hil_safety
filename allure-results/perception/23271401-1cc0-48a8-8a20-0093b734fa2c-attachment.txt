@@ -1,0 +1,3 @@
+INFO     camera_box_detection:base_hil_test.py:91 === Начало теста для camera_box_detection ===
+INFO     camera_box_detection:base_hil_test.py:42 Нода /perception/camera_box_detection жива True
+INFO     camera_box_detection:base_hil_test.py:42 Нода /perception/camera_box_detection жива True

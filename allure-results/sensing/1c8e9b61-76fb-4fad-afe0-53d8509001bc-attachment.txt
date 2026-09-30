@@ -1,0 +1,2 @@
+Нода /sensing/odometry_velocity_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

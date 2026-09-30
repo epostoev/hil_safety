@@ -12,8 +12,8 @@ INTEGRATION_NODES = [
     ("crash_detector_node",      "TC-INT-PRE-007", "/safety/crash_detector"),
     ("sda_process_monitor_node", "TC-INT-PRE-008", "/sda_process_monitor/sda_process_monitor"),
     ("v2x_publisher_node",       "TC-INT-PRE-009", "/v2x_publisher_node"),
-    # ("rosbag2_recorder_node",    "TC-INT-PRE-010", "/data_logging/rosbag2_recorder"),
-    # ("mrm_arbiter_node",         "TC-INT-PRE-011", "/mrm_arbiter"),
+    ("rosbag2_recorder_node",    "TC-INT-PRE-010", "/data_logging/rosbag2_recorder"),
+    ("mrm_arbiter_node",         "TC-INT-PRE-011", "/mrm_arbiter"),
 ]
 
 

@@ -1,0 +1,16 @@
+INFO     lidar_blind_zones:base_hil_test.py:91 === Начало теста для lidar_blind_zones ===
+INFO     lidar_blind_zones:base_hil_test.py:42 Нода /perception/lidar_blind_zones жива True
+INFO     lidar_blind_zones:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     lidar_blind_zones:base_hil_test.py:251 Docker exec: ps aux | grep 'lidar_blind_zones/lib/lidar_blind_zones/lidar_blind_zones' | grep -v grep
+INFO     lidar_blind_zones:base_hil_test.py:262 Найден PID: 218530
+INFO     lidar_blind_zones:kill_fault_injection.py:82 PID=218530
+INFO     lidar_blind_zones:kill_fault_injection.py:91 Stamp ДО kill: 1790321971.350976884
+INFO     lidar_blind_zones:base_hil_test.py:251 Docker exec: kill -6 218530
+INFO     lidar_blind_zones:kill_fault_injection.py:95 kill -6 отправлен PID=218530. Ждём появления /perception/lidar_blind_zones в error_code 131346...
+INFO     lidar_blind_zones:kill_fault_injection.py:111 Результат: success=True, reaction=9.735ms (9735238ns), nodes=['/perception/lidar_blind_zones', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     lidar_blind_zones:kill_fault_injection.py:133 Triggered errors: 2
+INFO     lidar_blind_zones:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     lidar_blind_zones:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/lidar_blind_zones","/perception/camera_tracker_cpp","/sen
+INFO     lidar_blind_zones:base_hil_test.py:42 Нода /perception/lidar_blind_zones жива True
+INFO     lidar_blind_zones:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     lidar_blind_zones:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.735ms

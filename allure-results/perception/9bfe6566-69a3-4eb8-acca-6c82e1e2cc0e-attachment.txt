@@ -1,0 +1,2 @@
+Нода /perception/image_segmenter_cpp перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

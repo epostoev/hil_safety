@@ -1,0 +1,3 @@
+INFO     /v2x_publisher_node:base_hil_test.py:91 === Начало теста для /v2x_publisher_node ===
+INFO     /v2x_publisher_node:base_hil_test.py:42 Нода /v2x_publisher_node жива True
+INFO     /v2x_publisher_node:base_hil_test.py:42 Нода /v2x_publisher_node жива True

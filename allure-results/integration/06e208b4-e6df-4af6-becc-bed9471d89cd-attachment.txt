@@ -1,0 +1,3 @@
+INFO     hardware_metrics:base_hil_test.py:91 === Начало теста для hardware_metrics ===
+INFO     hardware_metrics:base_hil_test.py:42 Нода /hardware_metrics жива True
+INFO     hardware_metrics:base_hil_test.py:42 Нода /hardware_metrics жива True

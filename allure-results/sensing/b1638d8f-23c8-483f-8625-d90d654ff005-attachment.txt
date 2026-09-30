@@ -1,0 +1,2 @@
+Нода /camera_synchronizer перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

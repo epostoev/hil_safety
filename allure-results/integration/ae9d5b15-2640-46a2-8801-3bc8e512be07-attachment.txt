@@ -1,0 +1,2 @@
+Нода /v2x_publisher_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

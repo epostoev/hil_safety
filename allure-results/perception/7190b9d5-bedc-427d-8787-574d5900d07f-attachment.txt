@@ -1,0 +1,15 @@
+INFO     objects_visualization:base_hil_test.py:91 === Начало теста для objects_visualization ===
+INFO     objects_visualization:base_hil_test.py:42 Нода /visualization/objects_visualization жива True
+INFO     objects_visualization:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     objects_visualization:base_hil_test.py:251 Docker exec: ps aux | grep 'sobjects_visualization/lib/objects_visualization/objects_visualization' | grep -v grep
+WARNING  objects_visualization:base_hil_test.py:264 Процесс не найден
+INFO     objects_visualization:kill_fault_injection.py:82 PID=None
+INFO     objects_visualization:kill_fault_injection.py:91 Stamp ДО kill: 1790326238.960900656
+INFO     objects_visualization:base_hil_test.py:251 Docker exec: kill -6 None
+INFO     objects_visualization:kill_fault_injection.py:95 kill -6 отправлен PID=None. Ждём появления /visualization/objects_visualization в error_code 131346...
+INFO     objects_visualization:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     objects_visualization:kill_fault_injection.py:133 Triggered errors: 2
+INFO     objects_visualization:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     objects_visualization:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     objects_visualization:base_hil_test.py:42 Нода /visualization/objects_visualization жива True
+INFO     objects_visualization:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅

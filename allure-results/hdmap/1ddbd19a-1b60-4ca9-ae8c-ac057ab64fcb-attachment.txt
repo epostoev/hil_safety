@@ -1,0 +1,4 @@
+INFO     rtk_provider_node:base_hil_test.py:91 === Начало теста для rtk_provider_node ===
+INFO     rtk_provider_node:base_hil_test.py:42 Нода /rtk_provider_node жива True
+INFO     rtk_provider_node:base_hil_test.py:42 Нода /rtk_provider_node жива True
+INFO     rtk_provider_node:base_hil_test.py:42 Нода /rtk_provider_node жива True

@@ -1,0 +1,2 @@
+Нода /sensing/crash_video_recorder перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

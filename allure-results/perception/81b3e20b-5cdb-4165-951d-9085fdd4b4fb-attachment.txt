@@ -1,0 +1,2 @@
+Нода /perception/camera_radar_fusion перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

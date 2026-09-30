@@ -1,0 +1,3 @@
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:91 === Начало теста для /data_logging/rosbag2_recorder ===
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:42 Нода /data_logging/rosbag2_recorder жива True
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:42 Нода /data_logging/rosbag2_recorder жива True

@@ -1,0 +1,4 @@
+INFO     hdmap_service_node:base_hil_test.py:91 === Начало теста для hdmap_service_node ===
+INFO     hdmap_service_node:base_hil_test.py:42 Нода /hdmap_service_node жива True
+INFO     hdmap_service_node:base_hil_test.py:42 Нода /hdmap_service_node жива True
+INFO     hdmap_service_node:base_hil_test.py:42 Нода /hdmap_service_node жива True

@@ -1,0 +1,2 @@
+Нода /perception/camera_box_detection перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

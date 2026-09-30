@@ -263,3 +263,59 @@ class ObjectsVisualizationNode(BaseHILTest):
 
     def __init__(self):
         super().__init__(node_name="objects_visualization", timeout=15)
+
+class CameraBoxDetection(BaseHILTest):
+    NODE_NAME = "/perception/camera_box_detection"
+    PROCESS_NAME = "sat_perception_camera_box_detection/lib/sat_perception_camera_box_detection/camera_box_detection_node"
+
+    def __init__(self):
+        super().__init__(node_name="camera_box_detection", timeout=15)
+
+class CameraLidarFusion(BaseHILTest):
+    NODE_NAME = "/perception/camera_lidar_fusion"
+    PROCESS_NAME = "sat_perception_camera_lidar_fusion/lib/sat_perception_camera_lidar_fusion/camera_lidar_fusion_node"
+
+    def __init__(self):
+        super().__init__(node_name="camera_lidar_fusion", timeout=15)
+
+class CameraRadarFusion(BaseHILTest):
+    NODE_NAME = "/perception/camera_radar_fusion"
+    PROCESS_NAME = "sat_perception_camera_radar_fusion/lib/sat_perception_camera_radar_fusion/camera_radar_fusion_node"
+
+    def __init__(self):
+        super().__init__(node_name="camera_radar_fusion", timeout=15)
+
+class GroundSegmenter(BaseHILTest):
+    NODE_NAME = "/perception/ground_segmenter"
+    PROCESS_NAME = "sat_perception_ground_segmenter/lib/sat_perception_ground_segmenter/ground_segmenter_node"
+
+    def __init__(self):
+        super().__init__(node_name="ground_segmenter", timeout=15)
+
+class MultimodalCpp(BaseHILTest):
+    NODE_NAME = "/perception/multimodal_cpp"
+    PROCESS_NAME = "sat_perception_multimodal_cpp/lib/sat_perception_multimodal_cpp/multimodal_cpp_node"
+
+    def __init__(self):
+        super().__init__(node_name="multimodal_cpp", timeout=15)
+
+class ObjectsTracker(BaseHILTest):
+    NODE_NAME = "/perception/objects_tracker"
+    PROCESS_NAME = "sat_perception_objects_tracker/lib/sat_perception_objects_tracker/objects_tracker_node"
+
+    def __init__(self):
+        super().__init__(node_name="objects_tracker", timeout=15)
+
+class RoadSurfaceConditionDetectorCpp(BaseHILTest):
+    NODE_NAME = "/perception/road_surface_condition_detector_cpp"
+    PROCESS_NAME = "sat_perception_road_surface_condition_detector_cpp/lib/sat_perception_road_surface_condition_detector_cpp/road_surface_condition_detector_cpp_node"
+
+    def __init__(self):
+        super().__init__(node_name="road_surface_condition_detector_cpp", timeout=15)
+
+class TrafficLightClassifier(BaseHILTest):
+    NODE_NAME = "/perception/traffic_light_classifier"
+    PROCESS_NAME = "sat_perception_traffic_light_classifier/lib/sat_perception_traffic_light_classifier/traffic_light_classifier_node"
+
+    def __init__(self):
+        super().__init__(node_name="road_surface_cotraffic_light_classifierndition_detector_cpp", timeout=15)

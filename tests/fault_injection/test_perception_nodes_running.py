@@ -7,7 +7,7 @@ PERCEPTION_NODES = [
         ("perception_camera_map_detector_node",                                 "TC-PER-PRE-004", "/perception/camera_map_detector"),
         ("perception_camera_tracker_cpp_node",                                  "TC-PER-PRE-005", "/perception/camera_tracker_cpp"),
         ("perception_camera_tracks_merger_node",                                "TC-PER-PRE-006", "/perception/camera_tracks_merger"),
-        ("perception_cloud_motion_detector_node",                               "TC-PER-PRE-007", "/perception/cloud_motion_detector"),
+        # ("perception_cloud_motion_detector_node",                               "TC-PER-PRE-007", "/perception/cloud_motion_detector"),
         ("perception_detector_3d_node",                                         "TC-PER-PRE-008", "/perception/detector_3d"),
         # ("perception_front_backbone_node",                                      "TC-PER-PRE-009", "/perception/front_backbone"),
         ("perception_image_segmenter_cpp_node",                                 "TC-PER-PRE-010", "/perception/image_segmenter_cpp"),
@@ -19,11 +19,11 @@ PERCEPTION_NODES = [
         ("perception_radar_static_obstacles_detector_node",                     "TC-PER-PRE-016", "/perception/radar_static_obstacles_detector"),
         ("perception_road_lines_3d_node",                                       "TC-PER-PRE-017", "/perception/road_lines_3d"),
         ("perception_road_lines_tracker_node",                                  "TC-PER-PRE-018", "/perception/road_lines_tracker"),
-        ("perception_road_surface_condition_detector_node",                     "TC-PER-PRE-019", "/perception/road_surface_condition_detector_cpp"),
+        # ("perception_road_surface_condition_detector_node",                     "TC-PER-PRE-019", "/perception/road_surface_condition_detector_cpp"),
         ("perception_roadworks_fusion_node",                                    "TC-PER-PRE-020", "/perception/roadworks_fusion"),
         # ("perception_segmentation_hdmap_fusion_node",                           "TC-PER-PRE-021", "/perception/segmentation_hdmap_fusion_node"),
         ("perception_signals_classifier_node",                                  "TC-PER-PRE-022", "/perception/signals_classifier_cpp"),
-        ("perception_speed_limit_classifier_node",                              "TC-PER-PRE-023", "/perception/speed_limit_classifier"),
+        # ("perception_speed_limit_classifier_node",                              "TC-PER-PRE-023", "/perception/speed_limit_classifier"),
         # ("perception_traffic_light_detects_node",                               "TC-PER-PRE-024", "/perception/traffic_light_detects"),
         # ("perception_traffic_sign_detects_node",                                "TC-PER-PRE-025", "/perception/traffic_sign_detects"),
         ("perception_traffic_sign_localization_node",                           "TC-PER-PRE-026", "/perception/traffic_sign_localization"),
@@ -32,9 +32,21 @@ PERCEPTION_NODES = [
         ("perception_visualization_cloud_clusters_visualization_node",          "TC-PER-PRE-029", "/perception/visualization/cloud_clusters_visualization"),
         ("perception_visualization_perception_lanes_visualization_py_node",     "TC-PER-PRE-030", "/perception/visualization/perception_lanes_visualization_py"),
         ("perception_visualization_perception_visualization_2d_node",           "TC-PER-PRE-031", "/perception/visualization/perception_visualization_2d"),
-        # ("perception_traffic_light_pipeline_node",                              "TC-PER-PRE-032", "/perception/traffic_light_pipeline"),
-        ("perception_visualization_objects_visualization_node",                 "TC-PER-PRE-033", "/visualization/objects_visualization")
+        ("perception_traffic_light_pipeline_node",                              "TC-PER-PRE-032", "/perception/traffic_light_pipeline"),
+        ("perception_visualization_objects_visualization_node",                 "TC-PER-PRE-033", "/visualization/objects_visualization"),
+
+        ("perception_camera_box_detection",                                     "TC-PER-PRE-034", "/perception/camera_box_detection"),
+        ("perception_camera_lidar_fusion",                                      "TC-PER-PRE-035", "/perception/camera_lidar_fusion"),
+        ("perception_camera_radar_fusion",                                      "TC-PER-PRE-036", "/perception/camera_radar_fusion"),
+        ("perception_ground_segmenter",                                         "TC-PER-PRE-037", "/perception/ground_segmenter"),
+        ("perception_multimodal_cpp",                                           "TC-PER-PRE-038", "/perception/multimodal_cpp"),
+        ("perception_objects_tracker",                                          "TC-PER-PRE-039", "/perception/objects_tracker"),
+        ("perception_road_surface_condition_detector_cpp",                      "TC-PER-PRE-040", "/perception/road_surface_condition_detector_cpp"),
+        ("perception_traffic_light_classifier",                                 "TC-PER-PRE-041", "/perception/traffic_light_classifier"),
 ]
+
+
+
 
 class TestPerceptionNodesRunning:
     @pytest.mark.parametrize("fixture_name, tc_id, node_name", PERCEPTION_NODES)

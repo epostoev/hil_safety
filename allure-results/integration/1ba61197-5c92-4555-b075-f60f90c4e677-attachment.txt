@@ -1,0 +1,16 @@
+INFO     /v2x_publisher_node:base_hil_test.py:91 === Начало теста для /v2x_publisher_node ===
+INFO     /v2x_publisher_node:base_hil_test.py:42 Нода /v2x_publisher_node жива True
+INFO     /v2x_publisher_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     /v2x_publisher_node:base_hil_test.py:251 Docker exec: ps aux | grep 'v2x_publisher/lib/v2x_publisher/v2x_publisher' | grep -v grep
+INFO     /v2x_publisher_node:base_hil_test.py:262 Найден PID: 2903575
+INFO     /v2x_publisher_node:kill_fault_injection.py:82 PID=2903575
+INFO     /v2x_publisher_node:kill_fault_injection.py:91 Stamp ДО kill: 1790268201.818717748
+INFO     /v2x_publisher_node:base_hil_test.py:251 Docker exec: kill -6 2903575
+INFO     /v2x_publisher_node:kill_fault_injection.py:95 kill -6 отправлен PID=2903575. Ждём появления /v2x_publisher_node в error_code 131346...
+INFO     /v2x_publisher_node:kill_fault_injection.py:111 Результат: success=True, reaction=12.402ms (12401820ns), nodes=['/v2x_publisher_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     /v2x_publisher_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     /v2x_publisher_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/camera_tracks_merger","/perception/road_lines_3d","/perce
+INFO     /v2x_publisher_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/v2x_publisher_node","/perception/camera_tracker_cpp","/sensing/cloud
+INFO     /v2x_publisher_node:base_hil_test.py:42 Нода /v2x_publisher_node жива True
+INFO     /v2x_publisher_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     /v2x_publisher_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 12.402ms

@@ -1,0 +1,2 @@
+Нода /perception/signals_classifier_cpp перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

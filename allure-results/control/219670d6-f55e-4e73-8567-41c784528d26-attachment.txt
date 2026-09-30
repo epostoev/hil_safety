@@ -1,0 +1,4 @@
+INFO     chassis_bridge_udp_reader:base_hil_test.py:91 === Начало теста для chassis_bridge_udp_reader ===
+INFO     chassis_bridge_udp_reader:base_hil_test.py:42 Нода /chassis/chassis_bridge_udp_reader жива True
+INFO     chassis_bridge_udp_reader:base_hil_test.py:42 Нода /chassis/chassis_bridge_udp_reader жива True
+INFO     chassis_bridge_udp_reader:base_hil_test.py:42 Нода /chassis/chassis_bridge_udp_reader жива True

@@ -1,0 +1,1 @@
+{"uuid": "b420a593-59c5-4bbc-8521-e51a74263e69", "children": ["7e392281-9ea7-4929-8f47-340cd4daeb24"], "befores": [{"name": "hdmap_dynamic_objects_service_alive", "status": "passed", "start": 1790695673980, "stop": 1790695675575}], "afters": [{"name": "hdmap_dynamic_objects_service_alive::<lambda>", "start": 1790695684683}], "start": 1790695673980, "stop": 1790695684683}

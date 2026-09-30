@@ -1,0 +1,2 @@
+Нода /perception/visualization/cloud_clusters_visualization перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

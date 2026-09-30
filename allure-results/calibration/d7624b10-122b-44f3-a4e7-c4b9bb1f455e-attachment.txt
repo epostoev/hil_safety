@@ -1,0 +1,13 @@
+INFO     intrinsic_repair_service:base_hil_test.py:91 === Начало теста для intrinsic_repair_service ===
+INFO     intrinsic_repair_service:base_hil_test.py:42 Нода /intrinsic_repair_service жива True
+INFO     intrinsic_repair_service:base_hil_test.py:42 Нода /intrinsic_repair_service жива True
+INFO     intrinsic_repair_service:base_hil_test.py:94 === Завершение теста для intrinsic_repair_service ===
+INFO     synced_feature_extractor:base_hil_test.py:94 === Завершение теста для synced_feature_extractor ===
+INFO     tf_estimation_node:base_hil_test.py:94 === Завершение теста для tf_estimation_node ===
+INFO     robot_state_publisher:base_hil_test.py:94 === Завершение теста для robot_state_publisher ===
+INFO     rct_validator:base_hil_test.py:94 === Завершение теста для rct_validator ===
+INFO     cam_to_cam_controller:base_hil_test.py:94 === Завершение теста для cam_to_cam_controller ===
+INFO     runtime_radar_autocalibration:base_hil_test.py:94 === Завершение теста для runtime_radar_autocalibration ===
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:94 === Завершение теста для imu_baselink_runtime_calibration ===
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:94 === Завершение теста для camera_to_baselink_online_calibrator ===
+INFO     intrinsic_publisher:base_hil_test.py:94 === Завершение теста для intrinsic_publisher ===

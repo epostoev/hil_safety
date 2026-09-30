@@ -1,0 +1,17 @@
+INFO     hdmap_service_node:base_hil_test.py:91 === Начало теста для hdmap_service_node ===
+INFO     hdmap_service_node:base_hil_test.py:42 Нода /hdmap_service_node жива True
+INFO     hdmap_service_node:base_hil_test.py:42 Нода /hdmap_service_node жива True
+INFO     hdmap_service_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     hdmap_service_node:base_hil_test.py:251 Docker exec: ps aux | grep 'hdmap_service/lib/hdmap_service/hdmap_service_node' | grep -v grep
+INFO     hdmap_service_node:base_hil_test.py:262 Найден PID: 3543444
+INFO     hdmap_service_node:kill_fault_injection.py:82 PID=3543444
+INFO     hdmap_service_node:kill_fault_injection.py:91 Stamp ДО kill: 1790695687.668920032
+INFO     hdmap_service_node:base_hil_test.py:251 Docker exec: kill -6 3543444
+INFO     hdmap_service_node:kill_fault_injection.py:95 kill -6 отправлен PID=3543444. Ждём появления /hdmap_service_node в error_code 131346...
+INFO     hdmap_service_node:kill_fault_injection.py:111 Результат: success=True, reaction=17.474ms (17473741ns), nodes=['/hdmap_service_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     hdmap_service_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     hdmap_service_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     hdmap_service_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/hdmap_service_node","/perception/camera_tracker_cpp","/sensing/cloud
+INFO     hdmap_service_node:base_hil_test.py:42 Нода /hdmap_service_node жива True
+INFO     hdmap_service_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     hdmap_service_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 17.474ms

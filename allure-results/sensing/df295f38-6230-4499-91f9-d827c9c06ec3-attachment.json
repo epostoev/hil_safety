@@ -1,0 +1,17 @@
+[
+  {
+    "error_code": 261906,
+    "error_code_hex": "0x0003FF12",
+    "details": "{\"/perception/camera_radar_fusion\":{\"/radar_roof_front_right/cluster_list\":\"Callback wasn''t invoked for a long time\"}}"
+  },
+  {
+    "error_code": 65810,
+    "error_code_hex": "0x00010112",
+    "details": "{\"nodes\":[\"/perception/box_segmentation_fusion\",\"/sensing/auto_cleaning\",\"/localization_output_gateway_node\",\"/nav_classic/localization\",\"/prediction\",\"/perception/camera_lidar_fusion\",\"/perception/radar_static_obstacles_detector\",\"/perception/point_cloud_clusterizer\",\"/perception/lidar_noise_detector\",\"/nav_classic/lidar_localization\",\"/perception/multimodal_cpp\",\"/acrux_listener\",\"/localization_initialization_node\",\"/perception/ground_segmenter\",\"/localization/lidar_localization\",\"/perception/objects_tracker\",\"/planning/maneuver_planner_node\",\"/perception/static_obstacles_tracker\",\"/perception/lidar_blind_zones\",\"/calibration/rct/runtime_radar_autocalibration\",\"/perception/speed_limit_classifier\",\"/perception/lidar_static_obstacles_detector\",\"/perception/segmentation_hdmap_fusion\",\"/perception/road_lines_tracker\",\"/perception/camera_tracks_merger\",\"/perception/road_lines_3d\",\"/perception/boom_barrier_detector\",\"/localization/localization\"]}"
+  },
+  {
+    "error_code": 131346,
+    "error_code_hex": "0x00020112",
+    "details": "{\"nodes\":[\"/perception/camera_tracker_cpp\",\"/sensing/cloud_builder\"]}"
+  }
+]

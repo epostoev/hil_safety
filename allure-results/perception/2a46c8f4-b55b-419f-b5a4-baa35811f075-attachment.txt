@@ -1,0 +1,2 @@
+Нода /perception/visualization/perception_visualization_2d перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

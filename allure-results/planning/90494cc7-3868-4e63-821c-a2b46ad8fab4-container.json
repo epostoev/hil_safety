@@ -1,0 +1,1 @@
+{"uuid": "58e648b0-f6d9-476b-8da7-083dc794d6db", "befores": [{"name": "fixture_name", "status": "passed", "start": 1790702684556, "stop": 1790702684556}], "afters": [{"name": "fixture_name::<lambda>", "start": 1790702962416}], "start": 1790702684556, "stop": 1790702962416}

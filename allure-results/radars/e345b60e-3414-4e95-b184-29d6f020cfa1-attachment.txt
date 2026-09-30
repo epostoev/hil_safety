@@ -1,0 +1,3 @@
+success:     True
+reaction_ms: 49.995ms
+details:     {"description":"Radar radar_roof_front_right was lost"}

@@ -1,0 +1,2 @@
+Нода /sda_process_monitor/sda_process_monitor перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

@@ -1,0 +1,17 @@
+INFO     mpc:base_hil_test.py:91 === Начало теста для mpc ===
+INFO     mpc:base_hil_test.py:42 Нода /control/mpc жива True
+INFO     mpc:base_hil_test.py:42 Нода /control/mpc жива True
+INFO     mpc:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     mpc:base_hil_test.py:251 Docker exec: ps aux | grep 'mpc/lib/mpc/mpc' | grep -v grep
+INFO     mpc:base_hil_test.py:262 Найден PID: 305541
+INFO     mpc:kill_fault_injection.py:82 PID=305541
+INFO     mpc:kill_fault_injection.py:91 Stamp ДО kill: 1790088371.178514807
+INFO     mpc:base_hil_test.py:251 Docker exec: kill -6 305541
+INFO     mpc:kill_fault_injection.py:95 kill -6 отправлен PID=305541. Ждём появления /control/mpc в error_code 131346...
+INFO     mpc:kill_fault_injection.py:111 Результат: success=True, reaction=9.983ms (9983453ns), nodes=['/control/mpc', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     mpc:kill_fault_injection.py:133 Triggered errors: 2
+INFO     mpc:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     mpc:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/control/mpc","/perception/camera_tracker_cpp","/sensing/cloud_builde
+INFO     mpc:base_hil_test.py:42 Нода /control/mpc жива True
+INFO     mpc:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     mpc:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.983ms

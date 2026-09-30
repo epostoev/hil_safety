@@ -1,0 +1,5 @@
+success:      True
+error_code:   0x00020112 (131346)
+nodes:        ['/hdmap_service_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+reaction_ms:  17.474ms
+reaction_ns:  17473741ns

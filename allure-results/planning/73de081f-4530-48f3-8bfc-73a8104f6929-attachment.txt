@@ -1,0 +1,16 @@
+INFO     path_loader_node:base_hil_test.py:91 === Начало теста для path_loader_node ===
+INFO     path_loader_node:base_hil_test.py:42 Нода /planning/path_loader_node жива True
+INFO     path_loader_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     path_loader_node:base_hil_test.py:251 Docker exec: ps aux | grep 'path_loader/lib/path_loader/path_loader_node' | grep -v grep
+INFO     path_loader_node:base_hil_test.py:262 Найден PID: 3787598
+INFO     path_loader_node:kill_fault_injection.py:82 PID=3787598
+INFO     path_loader_node:kill_fault_injection.py:91 Stamp ДО kill: 1790702686.90857923
+INFO     path_loader_node:base_hil_test.py:251 Docker exec: kill -6 3787598
+INFO     path_loader_node:kill_fault_injection.py:95 kill -6 отправлен PID=3787598. Ждём появления /planning/path_loader_node в error_code 131346...
+INFO     path_loader_node:kill_fault_injection.py:111 Результат: success=True, reaction=10.09ms (10089893ns), nodes=['/perception/objects_tracker', '/planning/path_loader_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     path_loader_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     path_loader_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/point_cloud_clusterizer","/perception/lidar_noise_detecto
+INFO     path_loader_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/objects_tracker","/planning/path_loader_node","/perceptio
+INFO     path_loader_node:base_hil_test.py:42 Нода /planning/path_loader_node жива True
+INFO     path_loader_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     path_loader_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.09ms

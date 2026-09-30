@@ -1,0 +1,16 @@
+INFO     radar_static_obstacles_detector:base_hil_test.py:91 === Начало теста для radar_static_obstacles_detector ===
+INFO     radar_static_obstacles_detector:base_hil_test.py:42 Нода /perception/radar_static_obstacles_detector жива True
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     radar_static_obstacles_detector:base_hil_test.py:251 Docker exec: ps aux | grep 'radar_static_obstacles_detector/lib/radar_static_obstacles_detector/radar_static_obstacles_detector' | grep -v grep
+INFO     radar_static_obstacles_detector:base_hil_test.py:262 Найден PID: 262913
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:82 PID=262913
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:91 Stamp ДО kill: 1790323115.952432036
+INFO     radar_static_obstacles_detector:base_hil_test.py:251 Docker exec: kill -6 262913
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:95 kill -6 отправлен PID=262913. Ждём появления /perception/radar_static_obstacles_detector в error_code 131346...
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:111 Результат: success=True, reaction=11.591ms (11591155ns), nodes=['/perception/radar_static_obstacles_detector', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:133 Triggered errors: 2
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/radar_static_obstacles_detector","/perception/camera_trac
+INFO     radar_static_obstacles_detector:base_hil_test.py:42 Нода /perception/radar_static_obstacles_detector жива True
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     radar_static_obstacles_detector:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 11.591ms

@@ -1,0 +1,3 @@
+INFO     rct_validator:base_hil_test.py:91 === Начало теста для rct_validator ===
+INFO     rct_validator:base_hil_test.py:42 Нода /calibration/rct/rct_validator жива True
+INFO     rct_validator:base_hil_test.py:42 Нода /calibration/rct/rct_validator жива True

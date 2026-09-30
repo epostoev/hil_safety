@@ -1,0 +1,3 @@
+INFO     /generic/hal:base_hil_test.py:91 === Начало теста для /generic/hal ===
+INFO     /generic/hal:base_hil_test.py:42 Нода /generic/hal жива True
+INFO     /generic/hal:base_hil_test.py:42 Нода /generic/hal жива True

@@ -1,0 +1,16 @@
+INFO     intrinsic_publisher:base_hil_test.py:91 === Начало теста для intrinsic_publisher ===
+INFO     intrinsic_publisher:base_hil_test.py:42 Нода /intrinsic_publisher жива True
+INFO     intrinsic_publisher:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     intrinsic_publisher:base_hil_test.py:251 Docker exec: ps aux | grep 'intrinsic_camera_calibration/lib/intrinsic_camera_calibration/intrinsic_publisher' | grep -v grep
+INFO     intrinsic_publisher:base_hil_test.py:262 Найден PID: 2624632
+INFO     intrinsic_publisher:kill_fault_injection.py:82 PID=2624632
+INFO     intrinsic_publisher:kill_fault_injection.py:91 Stamp ДО kill: 1790261642.985639372
+INFO     intrinsic_publisher:base_hil_test.py:251 Docker exec: kill -6 2624632
+INFO     intrinsic_publisher:kill_fault_injection.py:95 kill -6 отправлен PID=2624632. Ждём появления /intrinsic_publisher в error_code 131346...
+INFO     intrinsic_publisher:kill_fault_injection.py:111 Результат: success=True, reaction=10.007ms (10007484ns), nodes=['/intrinsic_publisher', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     intrinsic_publisher:kill_fault_injection.py:133 Triggered errors: 2
+INFO     intrinsic_publisher:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     intrinsic_publisher:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/intrinsic_publisher","/perception/camera_tracker_cpp","/sensing/clou
+INFO     intrinsic_publisher:base_hil_test.py:42 Нода /intrinsic_publisher жива True
+INFO     intrinsic_publisher:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     intrinsic_publisher:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.007ms

@@ -1,0 +1,2 @@
+Нода /perception/traffic_sign_localization перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

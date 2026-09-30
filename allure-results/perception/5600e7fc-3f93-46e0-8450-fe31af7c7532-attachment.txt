@@ -1,0 +1,16 @@
+INFO     perception_lanes_visualization_py:base_hil_test.py:91 === Начало теста для perception_lanes_visualization_py ===
+INFO     perception_lanes_visualization_py:base_hil_test.py:42 Нода /perception/visualization/perception_lanes_visualization_py жива True
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     perception_lanes_visualization_py:base_hil_test.py:251 Docker exec: ps aux | grep 'perception_lanes_visualization_py/lib/perception_lanes_visualization_py/perception_lanes_visualization_py' | grep -v grep
+INFO     perception_lanes_visualization_py:base_hil_test.py:262 Найден PID: 350553
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:82 PID=350553
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:91 Stamp ДО kill: 1790325388.780932234
+INFO     perception_lanes_visualization_py:base_hil_test.py:251 Docker exec: kill -6 350553
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:95 kill -6 отправлен PID=350553. Ждём появления /perception/visualization/perception_lanes_visualization_py в error_code 131346...
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:111 Результат: success=True, reaction=9.995ms (9995054ns), nodes=['/perception/visualization/perception_lanes_visualization_py', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:133 Triggered errors: 2
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/visualization/perception_lanes_visualization_py","/percep
+INFO     perception_lanes_visualization_py:base_hil_test.py:42 Нода /perception/visualization/perception_lanes_visualization_py жива True
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     perception_lanes_visualization_py:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.995ms

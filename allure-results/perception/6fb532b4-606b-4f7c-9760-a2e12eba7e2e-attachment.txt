@@ -1,0 +1,3 @@
+INFO     camera_radar_fusion:base_hil_test.py:91 === Начало теста для camera_radar_fusion ===
+INFO     camera_radar_fusion:base_hil_test.py:42 Нода /perception/camera_radar_fusion жива True
+INFO     camera_radar_fusion:base_hil_test.py:42 Нода /perception/camera_radar_fusion жива True

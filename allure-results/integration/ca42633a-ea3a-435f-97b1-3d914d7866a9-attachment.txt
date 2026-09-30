@@ -1,0 +1,2 @@
+Нода /hardware_metrics перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

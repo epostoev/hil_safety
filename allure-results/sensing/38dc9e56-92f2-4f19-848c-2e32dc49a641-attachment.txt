@@ -1,0 +1,3 @@
+TC ID:     TC-SENSING-PRE-001
+Node:      /sensing/auto_cleaning
+Статус:    ALIVE ✅

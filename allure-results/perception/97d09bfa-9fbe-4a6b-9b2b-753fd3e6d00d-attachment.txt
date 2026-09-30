@@ -1,0 +1,2 @@
+INFO     camera_tracker_cpp:base_hil_test.py:91 === Начало теста для camera_tracker_cpp ===
+INFO     camera_tracker_cpp:base_hil_test.py:42 Нода /perception/camera_tracker_cpp жива False

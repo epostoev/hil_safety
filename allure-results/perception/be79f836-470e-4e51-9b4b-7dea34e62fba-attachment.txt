@@ -1,0 +1,15 @@
+INFO     point_cloud_clusterizer:base_hil_test.py:91 === Начало теста для point_cloud_clusterizer ===
+INFO     point_cloud_clusterizer:base_hil_test.py:42 Нода /perception/point_cloud_clusterizer жива True
+INFO     point_cloud_clusterizer:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     point_cloud_clusterizer:base_hil_test.py:251 Docker exec: ps aux | grep 'point_cloud_clusterizer/lib/point_cloud_clusterizer/point_cloud_clusterizer' | grep -v grep
+WARNING  point_cloud_clusterizer:base_hil_test.py:264 Процесс не найден
+INFO     point_cloud_clusterizer:kill_fault_injection.py:82 PID=None
+INFO     point_cloud_clusterizer:kill_fault_injection.py:91 Stamp ДО kill: 1790322537.385129394
+INFO     point_cloud_clusterizer:base_hil_test.py:251 Docker exec: kill -6 None
+INFO     point_cloud_clusterizer:kill_fault_injection.py:95 kill -6 отправлен PID=None. Ждём появления /perception/point_cloud_clusterizer в error_code 131346...
+INFO     point_cloud_clusterizer:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     point_cloud_clusterizer:kill_fault_injection.py:133 Triggered errors: 2
+INFO     point_cloud_clusterizer:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     point_cloud_clusterizer:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     point_cloud_clusterizer:base_hil_test.py:42 Нода /perception/point_cloud_clusterizer жива True
+INFO     point_cloud_clusterizer:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅

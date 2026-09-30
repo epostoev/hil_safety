@@ -1,0 +1,2 @@
+Нода /perception/road_lines_tracker перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

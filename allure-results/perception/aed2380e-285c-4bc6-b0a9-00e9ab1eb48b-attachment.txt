@@ -1,0 +1,16 @@
+INFO     box_segmentation_fusion:base_hil_test.py:91 === Начало теста для box_segmentation_fusion ===
+INFO     box_segmentation_fusion:base_hil_test.py:42 Нода /perception/box_segmentation_fusion жива True
+INFO     box_segmentation_fusion:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     box_segmentation_fusion:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_box_segmentation_fusion/lib/sat_perception_box_segmentation_fusion/box_segmentation_fusion_node' | grep -v grep
+INFO     box_segmentation_fusion:base_hil_test.py:262 Найден PID: 153642
+INFO     box_segmentation_fusion:kill_fault_injection.py:82 PID=153642
+INFO     box_segmentation_fusion:kill_fault_injection.py:91 Stamp ДО kill: 1790320273.504472180
+INFO     box_segmentation_fusion:base_hil_test.py:251 Docker exec: kill -6 153642
+INFO     box_segmentation_fusion:kill_fault_injection.py:95 kill -6 отправлен PID=153642. Ждём появления /perception/box_segmentation_fusion в error_code 131346...
+INFO     box_segmentation_fusion:kill_fault_injection.py:111 Результат: success=True, reaction=19.993ms (19993172ns), nodes=['/perception/box_segmentation_fusion', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     box_segmentation_fusion:kill_fault_injection.py:133 Triggered errors: 2
+INFO     box_segmentation_fusion:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     box_segmentation_fusion:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/box_segmentation_fusion","/perception/camera_tracker_cpp"
+INFO     box_segmentation_fusion:base_hil_test.py:42 Нода /perception/box_segmentation_fusion жива True
+INFO     box_segmentation_fusion:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     box_segmentation_fusion:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 19.993ms

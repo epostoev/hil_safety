@@ -1,0 +1,5 @@
+success:      True
+error_code:   0x00020112 (131346)
+nodes:        ['/v2x_publisher_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+reaction_ms:  12.402ms
+reaction_ns:  12401820ns

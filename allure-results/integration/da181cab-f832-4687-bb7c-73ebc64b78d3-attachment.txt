@@ -1,0 +1,26 @@
+INFO     /mrm_arbiter:base_hil_test.py:91 === Начало теста для /mrm_arbiter ===
+INFO     /mrm_arbiter:base_hil_test.py:42 Нода /mrm_arbiter жива True
+INFO     /mrm_arbiter:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     /mrm_arbiter:base_hil_test.py:251 Docker exec: ps aux | grep 'mrm_arbiter/lib/mrm_arbiter/mrm_arbiter_node' | grep -v grep
+INFO     /mrm_arbiter:base_hil_test.py:262 Найден PID: 2925845
+INFO     /mrm_arbiter:kill_fault_injection.py:82 PID=2925845
+INFO     /mrm_arbiter:kill_fault_injection.py:91 Stamp ДО kill: 1790268775.584342092
+INFO     /mrm_arbiter:base_hil_test.py:251 Docker exec: kill -6 2925845
+INFO     /mrm_arbiter:kill_fault_injection.py:95 kill -6 отправлен PID=2925845. Ждём появления /mrm_arbiter в error_code 131346...
+INFO     /mrm_arbiter:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     /mrm_arbiter:kill_fault_injection.py:133 Triggered errors: 2
+INFO     /mrm_arbiter:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/cal
+INFO     /mrm_arbiter:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     /mrm_arbiter:base_hil_test.py:42 Нода /mrm_arbiter жива True
+INFO     /mrm_arbiter:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     /mrm_arbiter:base_hil_test.py:94 === Завершение теста для /mrm_arbiter ===
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:94 === Завершение теста для /data_logging/rosbag2_recorder ===
+INFO     /v2x_publisher_node:base_hil_test.py:94 === Завершение теста для /v2x_publisher_node ===
+INFO     /sda_process_monitor/sda_process_monitor:base_hil_test.py:94 === Завершение теста для /sda_process_monitor/sda_process_monitor ===
+INFO     /safety/crash_detector:base_hil_test.py:94 === Завершение теста для /safety/crash_detector ===
+INFO     /generic/hal:base_hil_test.py:94 === Завершение теста для /generic/hal ===
+INFO     metrics_aggregator:base_hil_test.py:94 === Завершение теста для metrics_aggregator ===
+INFO     hardware_metrics:base_hil_test.py:94 === Завершение теста для hardware_metrics ===
+INFO     cloud_telemetry_node:base_hil_test.py:94 === Завершение теста для cloud_telemetry_node ===
+INFO     carapi_node:base_hil_test.py:94 === Завершение теста для carapi_node ===
+INFO     can_telemetry:base_hil_test.py:94 === Завершение теста для can_telemetry ===

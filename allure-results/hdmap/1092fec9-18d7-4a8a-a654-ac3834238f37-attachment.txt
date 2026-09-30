@@ -1,0 +1,4 @@
+INFO     dynamic_objects_service_node:base_hil_test.py:91 === Начало теста для dynamic_objects_service_node ===
+INFO     dynamic_objects_service_node:base_hil_test.py:42 Нода /dynamic_objects_service_node жива True
+INFO     dynamic_objects_service_node:base_hil_test.py:42 Нода /dynamic_objects_service_node жива True
+INFO     dynamic_objects_service_node:base_hil_test.py:42 Нода /dynamic_objects_service_node жива True

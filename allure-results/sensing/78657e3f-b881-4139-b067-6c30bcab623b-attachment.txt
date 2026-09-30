@@ -1,0 +1,2 @@
+INFO     ublox_driver_node:base_hil_test.py:91 === Начало теста для ublox_driver_node ===
+INFO     ublox_driver_node:base_hil_test.py:42 Нода /sensing/ublox1/ublox_driver_node жива False

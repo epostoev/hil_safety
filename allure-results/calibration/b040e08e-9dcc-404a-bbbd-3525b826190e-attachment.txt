@@ -1,0 +1,26 @@
+INFO     intrinsic_repair_service:base_hil_test.py:91 === Начало теста для intrinsic_repair_service ===
+INFO     intrinsic_repair_service:base_hil_test.py:42 Нода /intrinsic_repair_service жива True
+INFO     intrinsic_repair_service:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     intrinsic_repair_service:base_hil_test.py:251 Docker exec: ps aux | grep 'intrinsic_repair_service/lib/intrinsic_repair_service/intrinsic_repair' | grep -v grep
+INFO     intrinsic_repair_service:base_hil_test.py:262 Найден PID: 2750457
+INFO     intrinsic_repair_service:kill_fault_injection.py:82 PID=2750457
+INFO     intrinsic_repair_service:kill_fault_injection.py:91 Stamp ДО kill: 1790264194.440607940
+INFO     intrinsic_repair_service:base_hil_test.py:251 Docker exec: kill -6 2750457
+INFO     intrinsic_repair_service:kill_fault_injection.py:95 kill -6 отправлен PID=2750457. Ждём появления /intrinsic_repair_service в error_code 131346...
+INFO     intrinsic_repair_service:kill_fault_injection.py:111 Результат: success=True, reaction=10.0ms (10000108ns), nodes=['/intrinsic_repair_service', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     intrinsic_repair_service:kill_fault_injection.py:133 Triggered errors: 2
+INFO     intrinsic_repair_service:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     intrinsic_repair_service:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/intrinsic_repair_service","/perception/camera_tracker_cpp","/sensing
+INFO     intrinsic_repair_service:base_hil_test.py:42 Нода /intrinsic_repair_service жива True
+INFO     intrinsic_repair_service:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     intrinsic_repair_service:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.0ms
+INFO     intrinsic_repair_service:base_hil_test.py:94 === Завершение теста для intrinsic_repair_service ===
+INFO     synced_feature_extractor:base_hil_test.py:94 === Завершение теста для synced_feature_extractor ===
+INFO     tf_estimation_node:base_hil_test.py:94 === Завершение теста для tf_estimation_node ===
+INFO     robot_state_publisher:base_hil_test.py:94 === Завершение теста для robot_state_publisher ===
+INFO     rct_validator:base_hil_test.py:94 === Завершение теста для rct_validator ===
+INFO     cam_to_cam_controller:base_hil_test.py:94 === Завершение теста для cam_to_cam_controller ===
+INFO     runtime_radar_autocalibration:base_hil_test.py:94 === Завершение теста для runtime_radar_autocalibration ===
+INFO     imu_baselink_runtime_calibration:base_hil_test.py:94 === Завершение теста для imu_baselink_runtime_calibration ===
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:94 === Завершение теста для camera_to_baselink_online_calibrator ===
+INFO     intrinsic_publisher:base_hil_test.py:94 === Завершение теста для intrinsic_publisher ===

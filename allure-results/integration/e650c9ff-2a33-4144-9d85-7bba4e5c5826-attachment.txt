@@ -1,0 +1,3 @@
+INFO     carapi_node:base_hil_test.py:91 === Начало теста для carapi_node ===
+INFO     carapi_node:base_hil_test.py:42 Нода /carapi_node жива True
+INFO     carapi_node:base_hil_test.py:42 Нода /carapi_node жива True

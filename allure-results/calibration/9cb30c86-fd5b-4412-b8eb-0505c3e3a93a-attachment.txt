@@ -1,0 +1,2 @@
+Нода /calibration/rct/camera_to_baselink_online_calibrator перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

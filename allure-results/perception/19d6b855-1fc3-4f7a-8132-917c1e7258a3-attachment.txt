@@ -1,0 +1,47 @@
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:91 === Начало теста для road_surface_cotraffic_light_classifierndition_detector_cpp ===
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:42 Нода /perception/traffic_light_classifier жива True
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_traffic_light_classifier/lib/sat_perception_traffic_light_classifier/traffic_light_classifier_node' | grep -v grep
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:262 Найден PID: 470360
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:82 PID=470360
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:91 Stamp ДО kill: 1790328512.246049651
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:251 Docker exec: kill -6 470360
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:95 kill -6 отправлен PID=470360. Ждём появления /perception/traffic_light_classifier в error_code 131346...
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:111 Результат: success=True, reaction=9.991ms (9991342ns), nodes=['/perception/traffic_light_classifier', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:133 Triggered errors: 2
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/traffic_light_classifier","/perception/camera_tracker_cpp
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:42 Нода /perception/traffic_light_classifier жива True
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.991ms
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:94 === Завершение теста для road_surface_cotraffic_light_classifierndition_detector_cpp ===
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:94 === Завершение теста для road_surface_condition_detector_cpp ===
+INFO     objects_tracker:base_hil_test.py:94 === Завершение теста для objects_tracker ===
+INFO     multimodal_cpp:base_hil_test.py:94 === Завершение теста для multimodal_cpp ===
+INFO     ground_segmenter:base_hil_test.py:94 === Завершение теста для ground_segmenter ===
+INFO     camera_radar_fusion:base_hil_test.py:94 === Завершение теста для camera_radar_fusion ===
+INFO     camera_lidar_fusion:base_hil_test.py:94 === Завершение теста для camera_lidar_fusion ===
+INFO     camera_box_detection:base_hil_test.py:94 === Завершение теста для camera_box_detection ===
+INFO     objects_visualization:base_hil_test.py:94 === Завершение теста для objects_visualization ===
+INFO     traffic_light_pipeline:base_hil_test.py:94 === Завершение теста для traffic_light_pipeline ===
+INFO     perception_visualization_2d:base_hil_test.py:94 === Завершение теста для perception_visualization_2d ===
+INFO     perception_lanes_visualization_py:base_hil_test.py:94 === Завершение теста для perception_lanes_visualization_py ===
+INFO     cloud_clusters_visualization:base_hil_test.py:94 === Завершение теста для cloud_clusters_visualization ===
+INFO     lidar_static_obstacles_detector:base_hil_test.py:94 === Завершение теста для lidar_static_obstacles_detector ===
+INFO     traffic_sign_localization:base_hil_test.py:94 === Завершение теста для traffic_sign_localization ===
+INFO     signals_classifier:base_hil_test.py:94 === Завершение теста для signals_classifier ===
+INFO     roadworks_fusion:base_hil_test.py:94 === Завершение теста для roadworks_fusion ===
+INFO     road_lines_tracker:base_hil_test.py:94 === Завершение теста для road_lines_tracker ===
+INFO     road_lines_3d:base_hil_test.py:94 === Завершение теста для road_lines_3d ===
+INFO     radar_static_obstacles_detector:base_hil_test.py:94 === Завершение теста для radar_static_obstacles_detector ===
+INFO     pollution_detector:base_hil_test.py:94 === Завершение теста для pollution_detector ===
+INFO     point_cloud_clusterizer:base_hil_test.py:94 === Завершение теста для point_cloud_clusterizer ===
+INFO     lidar_noise_detector:base_hil_test.py:94 === Завершение теста для lidar_noise_detector ===
+INFO     lidar_blind_zones:base_hil_test.py:94 === Завершение теста для lidar_blind_zones ===
+INFO     image_segmenter:base_hil_test.py:94 === Завершение теста для image_segmenter ===
+INFO     detector_3d:base_hil_test.py:94 === Завершение теста для detector_3d ===
+INFO     camera_tracks_merger:base_hil_test.py:94 === Завершение теста для camera_tracks_merger ===
+INFO     camera_tracker_cpp:base_hil_test.py:94 === Завершение теста для camera_tracker_cpp ===
+INFO     camera_map_detector:base_hil_test.py:94 === Завершение теста для camera_map_detector ===
+INFO     box_segmentation_fusion:base_hil_test.py:94 === Завершение теста для box_segmentation_fusion ===
+INFO     boom_barrier_detector:base_hil_test.py:94 === Завершение теста для boom_barrier_detector ===

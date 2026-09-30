@@ -1,0 +1,2 @@
+Нода /perception/point_cloud_clusterizer перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

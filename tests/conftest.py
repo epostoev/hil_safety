@@ -12,7 +12,8 @@ from framework.sensing_nodes import (
     RadarVisualizationNode,
     RoiSelectorNode,
     CameraDecoderNode,
-    CrashVideoRecorderNode)
+    CrashVideoRecorderNode,
+    AcruxListener, CameraSynchronizer)
 from framework.localization_nodes import (
     LocalizationOutputGatewayNode,
     LocalizationNodeContainerNode)
@@ -61,7 +62,12 @@ from framework.perception_nodes import (
     PerceptionLanesVisualizationPyNode,
     PerceptionVisualization2dNode,
     TrafficLightPipelineNode,
-    ObjectsVisualizationNode)
+    ObjectsVisualizationNode,
+    CameraBoxDetection, CameraLidarFusion,
+    CameraRadarFusion, GroundSegmenter,
+    MultimodalCpp, ObjectsTracker,
+    RoadSurfaceConditionDetectorCpp, TrafficLightClassifier,
+    )
 from framework.planning_nodes import (
     ManeuverPlannerNode,
     LaneTracerNode,
@@ -77,7 +83,8 @@ from framework.calibration_nodes import (
     ImuBaselinkRuntimeCalibrationNode, RuntimeRadarAutocalibrationNode,
     CamToCamTfEstimatorsNode, FeatureExtractorsNode,
     CamToCamControllerNode, RctValidatorNode,
-    RobotStatePublisherNode,
+    RobotStatePublisherNode, TfEstimationNode,
+    SyncedFeatureExtractor, IntrinsicRepairService
 )
 from framework.prediction_nodes import (
     PredictionNode, MlModelWrapperNode,
@@ -267,6 +274,38 @@ def crash_video_recorder_node_alive(crash_video_recorder_node):
         pytest.skip("Нода /sensing/crash_video_recorder не запущена")
     return crash_video_recorder_node
 
+
+@pytest.fixture(scope="module")
+def acrux_listener():
+    node = AcruxListener()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def acrux_listener_alive(acrux_listener):
+    if not acrux_listener.is_alive():
+        pytest.skip("Нода /acrux_listener не запущена")
+    return acrux_listener
+
+
+@pytest.fixture(scope="module")
+def camera_synchronizer():
+    node = CameraSynchronizer()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def camera_synchronizer_alive(acrux_listener):
+    if not camera_synchronizer.is_alive():
+        pytest.skip("Нода /camera_synchronizer не запущена")
+    return camera_synchronizer
+
+# Sensing
+# =============================================================================
 
 # =============================================================================
 # Localization
@@ -1064,6 +1103,161 @@ def perception_visualization_objects_visualization_node_alive(
         pytest.skip("Нода /objects_visualization_node не запущена")
     return perception_visualization_objects_visualization_node
 
+
+# "TC-PER-PRE-034"
+
+
+@pytest.fixture(scope="module")
+def perception_camera_box_detection():
+    node = CameraBoxDetection()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_camera_box_detection_alive(
+        perception_camera_box_detection):
+    if not perception_camera_box_detection.is_alive():
+        pytest.skip("Нода camera_box_detection не запущена")
+    return perception_camera_box_detection
+
+
+# "TC-PER-PRE-035"
+
+
+@pytest.fixture(scope="module")
+def perception_camera_lidar_fusion():
+    node = CameraLidarFusion()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_camera_lidar_fusion_alive(
+        perception_camera_lidar_fusion):
+    if not perception_camera_lidar_fusion.is_alive():
+        pytest.skip("Нода camera_lidar_fusion не запущена")
+    return perception_camera_lidar_fusion
+
+
+# "TC-PER-PRE-036"
+
+
+@pytest.fixture(scope="module")
+def perception_camera_radar_fusion():
+    node = CameraRadarFusion()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_camera_radar_fusion_alive(
+        perception_camera_radar_fusion):
+    if not perception_camera_radar_fusion.is_alive():
+        pytest.skip("Нода camera_radar_fusion не запущена")
+    return perception_camera_radar_fusion
+
+
+# "TC-PER-PRE-037"
+
+
+@pytest.fixture(scope="module")
+def perception_ground_segmenter():
+    node = GroundSegmenter()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_ground_segmenter_alive(
+        perception_ground_segmenter):
+    if not perception_ground_segmenter.is_alive():
+        pytest.skip("Нода ground_segmenter не запущена")
+    return perception_ground_segmenter
+
+
+# "TC-PER-PRE-038"
+
+
+@pytest.fixture(scope="module")
+def perception_multimodal_cpp():
+    node = MultimodalCpp()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_multimodal_cpp_alive(
+        perception_multimodal_cpp):
+    if not perception_multimodal_cpp.is_alive():
+        pytest.skip("Нода multimodal_cpp не запущена")
+    return perception_multimodal_cpp
+
+
+# "TC-PER-PRE-039"
+
+
+@pytest.fixture(scope="module")
+def perception_objects_tracker():
+    node = ObjectsTracker()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_objects_tracker_alive(
+        perception_objects_tracker):
+    if not perception_objects_tracker.is_alive():
+        pytest.skip("Нода objects_tracker не запущена")
+    return perception_objects_tracker
+
+
+# "TC-PER-PRE-040"
+
+
+@pytest.fixture(scope="module")
+def perception_road_surface_condition_detector_cpp():
+    node = RoadSurfaceConditionDetectorCpp()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_road_surface_condition_detector_cpp_alive(
+        perception_road_surface_condition_detector_cpp):
+    if not perception_road_surface_condition_detector_cpp.is_alive():
+        pytest.skip("Нода road_surface_condition_detector_cpp не запущена")
+    return perception_road_surface_condition_detector_cpp
+
+
+# "TC-PER-PRE-041"
+
+
+@pytest.fixture(scope="module")
+def perception_traffic_light_classifier():
+    node = TrafficLightClassifier()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def perception_traffic_light_classifier_alive(
+        perception_traffic_light_classifier):
+    if not perception_traffic_light_classifier.is_alive():
+        pytest.skip("Нода traffic_light_classifier не запущена")
+    return traffic_light_classifier
+
+
+
+
 # Perception
 # =============================================================================
 
@@ -1360,40 +1554,59 @@ def calibration_robot_state_publisher_node_alive(
         pytest.skip("Нода /robot_state_publisher не запущена")
     return calibration_robot_state_publisher_node
 
+
 # TC-CAL-PRE-010
 
-
 @pytest.fixture(scope="module")
-def calibration_intrinsic_repair_service_node():
-    node = IntrinsicRepairServiceNode()
+def calibration_rct_tf_estimation_node():
+    node = TfEstimationNode()
     node.setup()
     yield node
     node.teardown()
 
 
 @pytest.fixture(scope="module")
-def calibration_intrinsic_repair_service_node_alive(
-        calibration_intrinsic_repair_service_node):
-    if not calibration_intrinsic_repair_service_node.is_alive():
-        pytest.skip("Нода /intrinsic_repair_service не запущена")
-    return calibration_intrinsic_repair_service_node
+def calibration_rct_tf_estimation_node_alive(
+        calibration_rct_tf_estimation_node):
+    if not calibration_rct_tf_estimation_node.is_alive():
+        pytest.skip("Нода /tf_estimation_node не запущена")
+    return calibration_rct_tf_estimation_node
+
 
 # TC-CAL-PRE-011
 
-
 @pytest.fixture(scope="module")
-def calibration_calapi_node():
-    node = CalApiNode()
+def calibration_synced_feature_extractor():
+    node = SyncedFeatureExtractor()
     node.setup()
     yield node
     node.teardown()
 
 
 @pytest.fixture(scope="module")
-def calibration_calapi_node_alive(calibration_calapi_node):
-    if not calibration_calapi_node.is_alive():
-        pytest.skip("Нода /calibration/calapi_node не запущена")
-    return calibration_calapi_node
+def calibration_synced_feature_extractor_alive(
+        calibration_synced_feature_extractor):
+    if not calibration_synced_feature_extractor.is_alive():
+        pytest.skip("Нода /synced_feature_extractor не запущена")
+    return calibration_synced_feature_extractor
+
+# TC-CAL-PRE-012
+
+@pytest.fixture(scope="module")
+def calibration_intrinsic_repair_service():
+    node = IntrinsicRepairService()
+    node.setup()
+    yield node
+    node.teardown()
+
+
+@pytest.fixture(scope="module")
+def calibration_intrinsic_repair_service_alive(
+        calibration_intrinsic_repair_service):
+    if not calibration_intrinsic_repair_service.is_alive():
+        pytest.skip("Нода /intrinsic_repair_service не запущена")
+    return calibration_intrinsic_repair_service
+
 
 # Calibration
 # =============================================================================

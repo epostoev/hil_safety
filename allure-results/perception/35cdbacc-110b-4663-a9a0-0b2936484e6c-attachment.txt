@@ -1,0 +1,3 @@
+INFO     objects_tracker:base_hil_test.py:91 === Начало теста для objects_tracker ===
+INFO     objects_tracker:base_hil_test.py:42 Нода /perception/objects_tracker жива True
+INFO     objects_tracker:base_hil_test.py:42 Нода /perception/objects_tracker жива True

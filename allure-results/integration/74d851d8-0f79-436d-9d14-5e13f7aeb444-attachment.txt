@@ -1,0 +1,3 @@
+INFO     metrics_aggregator:base_hil_test.py:91 === Начало теста для metrics_aggregator ===
+INFO     metrics_aggregator:base_hil_test.py:42 Нода /metrics_aggregator жива True
+INFO     metrics_aggregator:base_hil_test.py:42 Нода /metrics_aggregator жива True

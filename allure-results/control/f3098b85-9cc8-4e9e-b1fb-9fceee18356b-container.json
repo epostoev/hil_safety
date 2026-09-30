@@ -1,0 +1,1 @@
+{"uuid": "7bfa9ee4-bfa1-4e0e-bcab-39d0c85f19c2", "children": ["36e835d0-f4a8-4238-8dcd-a783be6d4d59"], "befores": [{"name": "control_input_monitor_node_alive", "status": "passed", "start": 1790086954505, "stop": 1790086955851}], "afters": [{"name": "control_input_monitor_node_alive::<lambda>", "start": 1790086965641}], "start": 1790086954505, "stop": 1790086965641}

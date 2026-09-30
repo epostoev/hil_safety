@@ -1,0 +1,2 @@
+Нода /calibration/rct/rct_validator перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

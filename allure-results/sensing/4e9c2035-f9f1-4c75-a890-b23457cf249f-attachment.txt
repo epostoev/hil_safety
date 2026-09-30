@@ -1,0 +1,26 @@
+INFO     camera_synchronizer:base_hil_test.py:91 === Начало теста для camera_synchronizer ===
+INFO     camera_synchronizer:base_hil_test.py:42 Нода /camera_synchronizer жива True
+INFO     camera_synchronizer:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     camera_synchronizer:base_hil_test.py:251 Docker exec: ps aux | grep 'camera_synchronizer/lib/camera_synchronizer/camera_synchronizer' | grep -v grep
+INFO     camera_synchronizer:base_hil_test.py:262 Найден PID: 2982257
+INFO     camera_synchronizer:kill_fault_injection.py:82 PID=2982257
+INFO     camera_synchronizer:kill_fault_injection.py:91 Stamp ДО kill: 1790686621.160252131
+INFO     camera_synchronizer:base_hil_test.py:251 Docker exec: kill -6 2982257
+INFO     camera_synchronizer:kill_fault_injection.py:95 kill -6 отправлен PID=2982257. Ждём появления /camera_synchronizer в error_code 131346...
+INFO     camera_synchronizer:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     camera_synchronizer:kill_fault_injection.py:133 Triggered errors: 3
+INFO     camera_synchronizer:kill_fault_injection.py:135   0x0003FF12 (261906): {"/perception/camera_radar_fusion":{"/radar_roof_front_right/cluster_list":"Call
+INFO     camera_synchronizer:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/box_segmentation_fusion","/sensing/auto_cleaning","/local
+INFO     camera_synchronizer:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     camera_synchronizer:base_hil_test.py:42 Нода /camera_synchronizer жива True
+INFO     camera_synchronizer:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     camera_synchronizer:base_hil_test.py:94 === Завершение теста для camera_synchronizer ===
+INFO     acrux_listener:base_hil_test.py:94 === Завершение теста для acrux_listener ===
+INFO     crash_video_recorder:base_hil_test.py:94 === Завершение теста для crash_video_recorder ===
+INFO     roi_selector:base_hil_test.py:94 === Завершение теста для roi_selector ===
+INFO     ublox_driver_node:base_hil_test.py:94 === Завершение теста для ublox_driver_node ===
+INFO     radar_driver_node:base_hil_test.py:94 === Завершение теста для radar_driver_node ===
+INFO     odometry_velocity_node:base_hil_test.py:94 === Завершение теста для odometry_velocity_node ===
+INFO     odometry_node:base_hil_test.py:94 === Завершение теста для odometry_node ===
+INFO     imu_node:base_hil_test.py:94 === Завершение теста для imu_node ===
+INFO     auto_cleaning:base_hil_test.py:94 === Завершение теста для auto_cleaning ===

@@ -1,0 +1,3 @@
+INFO     odometry_velocity_node:base_hil_test.py:91 === Начало теста для odometry_velocity_node ===
+INFO     odometry_velocity_node:base_hil_test.py:42 Нода /sensing/odometry_velocity_node жива True
+INFO     odometry_velocity_node:base_hil_test.py:42 Нода /sensing/odometry_velocity_node жива True

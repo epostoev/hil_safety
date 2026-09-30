@@ -1,0 +1,3 @@
+INFO     pollution_detector:base_hil_test.py:91 === Начало теста для pollution_detector ===
+INFO     pollution_detector:base_hil_test.py:42 Нода /perception/pollution_detector_cpp жива True
+INFO     pollution_detector:base_hil_test.py:42 Нода /perception/pollution_detector_cpp жива True

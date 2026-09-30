@@ -1,0 +1,2 @@
+INFO     telecan_body:base_hil_test.py:91 === Начало теста для telecan_body ===
+INFO     telecan_body:base_hil_test.py:42 Нода /chassis/telecan_body жива False

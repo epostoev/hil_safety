@@ -1,0 +1,34 @@
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:91 === Начало теста для road_surface_cotraffic_light_classifierndition_detector_cpp ===
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:42 Нода /perception/traffic_light_classifier жива True
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:42 Нода /perception/traffic_light_classifier жива True
+INFO     road_surface_cotraffic_light_classifierndition_detector_cpp:base_hil_test.py:94 === Завершение теста для road_surface_cotraffic_light_classifierndition_detector_cpp ===
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:94 === Завершение теста для road_surface_condition_detector_cpp ===
+INFO     objects_tracker:base_hil_test.py:94 === Завершение теста для objects_tracker ===
+INFO     multimodal_cpp:base_hil_test.py:94 === Завершение теста для multimodal_cpp ===
+INFO     ground_segmenter:base_hil_test.py:94 === Завершение теста для ground_segmenter ===
+INFO     camera_radar_fusion:base_hil_test.py:94 === Завершение теста для camera_radar_fusion ===
+INFO     camera_lidar_fusion:base_hil_test.py:94 === Завершение теста для camera_lidar_fusion ===
+INFO     camera_box_detection:base_hil_test.py:94 === Завершение теста для camera_box_detection ===
+INFO     objects_visualization:base_hil_test.py:94 === Завершение теста для objects_visualization ===
+INFO     traffic_light_pipeline:base_hil_test.py:94 === Завершение теста для traffic_light_pipeline ===
+INFO     perception_visualization_2d:base_hil_test.py:94 === Завершение теста для perception_visualization_2d ===
+INFO     perception_lanes_visualization_py:base_hil_test.py:94 === Завершение теста для perception_lanes_visualization_py ===
+INFO     cloud_clusters_visualization:base_hil_test.py:94 === Завершение теста для cloud_clusters_visualization ===
+INFO     lidar_static_obstacles_detector:base_hil_test.py:94 === Завершение теста для lidar_static_obstacles_detector ===
+INFO     traffic_sign_localization:base_hil_test.py:94 === Завершение теста для traffic_sign_localization ===
+INFO     signals_classifier:base_hil_test.py:94 === Завершение теста для signals_classifier ===
+INFO     roadworks_fusion:base_hil_test.py:94 === Завершение теста для roadworks_fusion ===
+INFO     road_lines_tracker:base_hil_test.py:94 === Завершение теста для road_lines_tracker ===
+INFO     road_lines_3d:base_hil_test.py:94 === Завершение теста для road_lines_3d ===
+INFO     radar_static_obstacles_detector:base_hil_test.py:94 === Завершение теста для radar_static_obstacles_detector ===
+INFO     pollution_detector:base_hil_test.py:94 === Завершение теста для pollution_detector ===
+INFO     point_cloud_clusterizer:base_hil_test.py:94 === Завершение теста для point_cloud_clusterizer ===
+INFO     lidar_noise_detector:base_hil_test.py:94 === Завершение теста для lidar_noise_detector ===
+INFO     lidar_blind_zones:base_hil_test.py:94 === Завершение теста для lidar_blind_zones ===
+INFO     image_segmenter:base_hil_test.py:94 === Завершение теста для image_segmenter ===
+INFO     detector_3d:base_hil_test.py:94 === Завершение теста для detector_3d ===
+INFO     camera_tracks_merger:base_hil_test.py:94 === Завершение теста для camera_tracks_merger ===
+INFO     camera_tracker_cpp:base_hil_test.py:94 === Завершение теста для camera_tracker_cpp ===
+INFO     camera_map_detector:base_hil_test.py:94 === Завершение теста для camera_map_detector ===
+INFO     box_segmentation_fusion:base_hil_test.py:94 === Завершение теста для box_segmentation_fusion ===
+INFO     boom_barrier_detector:base_hil_test.py:94 === Завершение теста для boom_barrier_detector ===

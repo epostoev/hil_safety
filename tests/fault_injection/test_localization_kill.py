@@ -9,6 +9,10 @@ LOCALIZATION_NODES = [
     ("localization_node_container_node",   "TC-LOC-PRE-002", "/localization/node_container"),
 ]
 
+#TODO Доделать, грязный старт, если ноды была не запущено по каким нибудь причинам то отразить это в тесте
+# Например: /nav_classic/localization, /localization/lidar_localization, /localization_initialization_node,
+#
+
 
 class TestLocalizationKill:
 

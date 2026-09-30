@@ -1,0 +1,3 @@
+INFO     can_telemetry:base_hil_test.py:91 === Начало теста для can_telemetry ===
+INFO     can_telemetry:base_hil_test.py:42 Нода /can_telemetry жива True
+INFO     can_telemetry:base_hil_test.py:42 Нода /can_telemetry жива True

@@ -1,0 +1,16 @@
+INFO     camera_lidar_fusion:base_hil_test.py:91 === Начало теста для camera_lidar_fusion ===
+INFO     camera_lidar_fusion:base_hil_test.py:42 Нода /perception/camera_lidar_fusion жива True
+INFO     camera_lidar_fusion:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     camera_lidar_fusion:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_camera_lidar_fusion/lib/sat_perception_camera_lidar_fusion/camera_lidar_fusion_node' | grep -v grep
+INFO     camera_lidar_fusion:base_hil_test.py:262 Найден PID: 404911
+INFO     camera_lidar_fusion:kill_fault_injection.py:82 PID=404911
+INFO     camera_lidar_fusion:kill_fault_injection.py:91 Stamp ДО kill: 1790326812.760564986
+INFO     camera_lidar_fusion:base_hil_test.py:251 Docker exec: kill -6 404911
+INFO     camera_lidar_fusion:kill_fault_injection.py:95 kill -6 отправлен PID=404911. Ждём появления /perception/camera_lidar_fusion в error_code 131346...
+INFO     camera_lidar_fusion:kill_fault_injection.py:111 Результат: success=True, reaction=11.436ms (11435869ns), nodes=['/perception/camera_lidar_fusion', '/perception/camera_tracker_cpp', '/calibration/rct/camera_to_baselink_online_calibrator', '/sensing/cloud_builder']
+INFO     camera_lidar_fusion:kill_fault_injection.py:133 Triggered errors: 2
+INFO     camera_lidar_fusion:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     camera_lidar_fusion:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_lidar_fusion","/perception/camera_tracker_cpp","/c
+INFO     camera_lidar_fusion:base_hil_test.py:42 Нода /perception/camera_lidar_fusion жива True
+INFO     camera_lidar_fusion:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     camera_lidar_fusion:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 11.436ms

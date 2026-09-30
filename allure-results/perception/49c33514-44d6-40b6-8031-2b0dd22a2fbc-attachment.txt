@@ -1,0 +1,2 @@
+Нода /perception/traffic_light_pipeline перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

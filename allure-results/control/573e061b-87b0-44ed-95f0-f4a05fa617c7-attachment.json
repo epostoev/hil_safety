@@ -1,0 +1,12 @@
+[
+  {
+    "error_code": 65810,
+    "error_code_hex": "0x00010112",
+    "details": "{\"nodes\":[\"/perception/road_lines_3d\",\"/perception/camera_tracks_merger\",\"/perception/camera_radar_fusion\",\"/perception/speed_limit_classifier\",\"/perception/segmentation_hdmap_fusion\",\"/calibration/rct/runtime_radar_autocalibration\",\"/perception/road_lines_tracker\",\"/perception/lidar_blind_zones\",\"/perception/lidar_static_obstacles_detector\",\"/perception/radar_static_obstacles_detector\",\"/perception/multimodal_cpp\",\"/perception/lidar_noise_detector\",\"/perception/point_cloud_clusterizer\",\"/perception/camera_lidar_fusion\",\"/prediction\",\"/localization_initialization_node\",\"/perception/ground_segmenter\",\"/perception/static_obstacles_tracker\",\"/sensing/auto_cleaning\",\"/perception/boom_barrier_detector\",\"/acrux_listener\",\"/planning/maneuver_planner_node\",\"/localization/lidar_localization\",\"/nav_classic/localization\",\"/localization_output_gateway_node\",\"/perception/objects_tracker\",\"/nav_classic/lidar_localization\",\"/localization/localization\",\"/perception/box_segmentation_fusion\"]}"
+  },
+  {
+    "error_code": 131346,
+    "error_code_hex": "0x00020112",
+    "details": "{\"nodes\":[\"/control/input_monitor\",\"/perception/camera_tracker_cpp\",\"/sensing/cloud_builder\"]}"
+  }
+]

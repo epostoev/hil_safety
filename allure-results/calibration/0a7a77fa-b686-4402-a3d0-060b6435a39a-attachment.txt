@@ -1,0 +1,2 @@
+Нода /intrinsic_repair_service перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

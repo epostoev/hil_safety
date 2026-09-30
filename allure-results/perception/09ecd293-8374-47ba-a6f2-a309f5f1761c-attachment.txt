@@ -1,0 +1,16 @@
+INFO     image_segmenter:base_hil_test.py:91 === Начало теста для image_segmenter ===
+INFO     image_segmenter:base_hil_test.py:42 Нода /perception/image_segmenter_cpp жива True
+INFO     image_segmenter:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     image_segmenter:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_image_segmenter_cpp/lib/sat_perception_image_segmenter_cpp/image_segmenter_cpp_node' | grep -v grep
+INFO     image_segmenter:base_hil_test.py:262 Найден PID: 207927
+INFO     image_segmenter:kill_fault_injection.py:82 PID=207927
+INFO     image_segmenter:kill_fault_injection.py:91 Stamp ДО kill: 1790321681.993836777
+INFO     image_segmenter:base_hil_test.py:251 Docker exec: kill -6 207927
+INFO     image_segmenter:kill_fault_injection.py:95 kill -6 отправлен PID=207927. Ждём появления /perception/image_segmenter_cpp в error_code 131346...
+INFO     image_segmenter:kill_fault_injection.py:111 Результат: success=True, reaction=10.008ms (10007559ns), nodes=['/perception/image_segmenter_cpp', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     image_segmenter:kill_fault_injection.py:133 Triggered errors: 2
+INFO     image_segmenter:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     image_segmenter:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/image_segmenter_cpp","/perception/camera_tracker_cpp","/s
+INFO     image_segmenter:base_hil_test.py:42 Нода /perception/image_segmenter_cpp жива True
+INFO     image_segmenter:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     image_segmenter:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.008ms

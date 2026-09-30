@@ -1,0 +1,4 @@
+INFO     chassis_adapter_sender:base_hil_test.py:91 === Начало теста для chassis_adapter_sender ===
+INFO     chassis_adapter_sender:base_hil_test.py:42 Нода /chassis/chassis_adapter_sender жива True
+INFO     chassis_adapter_sender:base_hil_test.py:42 Нода /chassis/chassis_adapter_sender жива True
+INFO     chassis_adapter_sender:base_hil_test.py:42 Нода /chassis/chassis_adapter_sender жива True

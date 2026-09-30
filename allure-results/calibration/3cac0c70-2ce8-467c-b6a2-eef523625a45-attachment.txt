@@ -1,0 +1,2 @@
+Нода /calibration/rct/tf_estimation_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

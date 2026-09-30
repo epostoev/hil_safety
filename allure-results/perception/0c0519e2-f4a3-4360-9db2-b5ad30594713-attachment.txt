@@ -1,0 +1,2 @@
+Нода /perception/visualization/perception_lanes_visualization_py перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

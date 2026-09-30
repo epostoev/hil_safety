@@ -1,0 +1,2 @@
+Нода /safety/crash_detector перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

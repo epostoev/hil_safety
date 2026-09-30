@@ -1,0 +1,2 @@
+Нода /perception/lidar_static_obstacles_detector перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

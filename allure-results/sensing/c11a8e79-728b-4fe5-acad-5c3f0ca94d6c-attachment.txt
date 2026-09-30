@@ -1,0 +1,2 @@
+Нода /sensing/auto_cleaning перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

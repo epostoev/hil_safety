@@ -1,0 +1,15 @@
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:91 === Начало теста для /data_logging/rosbag2_recorder ===
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:42 Нода /data_logging/rosbag2_recorder жива True
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_infra_rosbag2_transport/lib/sat_infra_rosbag2_transport/rosbag2_recorder_node' | grep -v grep
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:262 Найден PID: 2914885
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:82 PID=2914885
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:91 Stamp ДО kill: 1790268484.487795303
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:251 Docker exec: kill -6 2914885
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:95 kill -6 отправлен PID=2914885. Ждём появления /data_logging/rosbag2_recorder в error_code 131346...
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:133 Triggered errors: 2
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:42 Нода /data_logging/rosbag2_recorder жива True
+INFO     /data_logging/rosbag2_recorder:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅

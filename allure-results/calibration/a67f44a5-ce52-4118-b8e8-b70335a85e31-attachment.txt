@@ -1,0 +1,16 @@
+INFO     cam_to_cam_controller:base_hil_test.py:91 === Начало теста для cam_to_cam_controller ===
+INFO     cam_to_cam_controller:base_hil_test.py:42 Нода /calibration/rct/cam_to_cam_controller жива True
+INFO     cam_to_cam_controller:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     cam_to_cam_controller:base_hil_test.py:251 Docker exec: ps aux | grep 'cam_to_cam_controller/lib/cam_to_cam_controller/cam_to_cam_controller' | grep -v grep
+INFO     cam_to_cam_controller:base_hil_test.py:262 Найден PID: 2694830
+INFO     cam_to_cam_controller:kill_fault_injection.py:82 PID=2694830
+INFO     cam_to_cam_controller:kill_fault_injection.py:91 Stamp ДО kill: 1790262766.988721231
+INFO     cam_to_cam_controller:base_hil_test.py:251 Docker exec: kill -6 2694830
+INFO     cam_to_cam_controller:kill_fault_injection.py:95 kill -6 отправлен PID=2694830. Ждём появления /calibration/rct/cam_to_cam_controller в error_code 131346...
+INFO     cam_to_cam_controller:kill_fault_injection.py:111 Результат: success=True, reaction=19.997ms (19997223ns), nodes=['/calibration/rct/cam_to_cam_controller', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     cam_to_cam_controller:kill_fault_injection.py:133 Triggered errors: 2
+INFO     cam_to_cam_controller:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     cam_to_cam_controller:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/calibration/rct/cam_to_cam_controller","/perception/camera_tracker_c
+INFO     cam_to_cam_controller:base_hil_test.py:42 Нода /calibration/rct/cam_to_cam_controller жива True
+INFO     cam_to_cam_controller:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     cam_to_cam_controller:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 19.997ms

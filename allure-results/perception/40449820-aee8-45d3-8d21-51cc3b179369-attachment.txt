@@ -1,0 +1,3 @@
+INFO     objects_visualization:base_hil_test.py:91 === Начало теста для objects_visualization ===
+INFO     objects_visualization:base_hil_test.py:42 Нода /visualization/objects_visualization жива True
+INFO     objects_visualization:base_hil_test.py:42 Нода /visualization/objects_visualization жива True

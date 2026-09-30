@@ -1,0 +1,3 @@
+INFO     cloud_telemetry_node:base_hil_test.py:91 === Начало теста для cloud_telemetry_node ===
+INFO     cloud_telemetry_node:base_hil_test.py:42 Нода /infra/cloud_telemetry_node жива True
+INFO     cloud_telemetry_node:base_hil_test.py:42 Нода /infra/cloud_telemetry_node жива True

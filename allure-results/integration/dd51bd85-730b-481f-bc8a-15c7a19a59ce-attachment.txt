@@ -1,0 +1,16 @@
+INFO     metrics_aggregator:base_hil_test.py:91 === Начало теста для metrics_aggregator ===
+INFO     metrics_aggregator:base_hil_test.py:42 Нода /metrics_aggregator жива True
+INFO     metrics_aggregator:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     metrics_aggregator:base_hil_test.py:251 Docker exec: ps aux | grep 'metrics_aggregator/lib/metrics_aggregator/metrics_aggregator_node' | grep -v grep
+INFO     metrics_aggregator:base_hil_test.py:262 Найден PID: 2860391
+INFO     metrics_aggregator:kill_fault_injection.py:82 PID=2860391
+INFO     metrics_aggregator:kill_fault_injection.py:91 Stamp ДО kill: 1790267077.645463196
+INFO     metrics_aggregator:base_hil_test.py:251 Docker exec: kill -6 2860391
+INFO     metrics_aggregator:kill_fault_injection.py:95 kill -6 отправлен PID=2860391. Ждём появления /metrics_aggregator в error_code 131346...
+INFO     metrics_aggregator:kill_fault_injection.py:111 Результат: success=True, reaction=19.96ms (19960455ns), nodes=['/metrics_aggregator', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     metrics_aggregator:kill_fault_injection.py:133 Triggered errors: 2
+INFO     metrics_aggregator:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     metrics_aggregator:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/metrics_aggregator","/perception/camera_tracker_cpp","/sensing/cloud
+INFO     metrics_aggregator:base_hil_test.py:42 Нода /metrics_aggregator жива True
+INFO     metrics_aggregator:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     metrics_aggregator:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 19.96ms

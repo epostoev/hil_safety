@@ -1,0 +1,2 @@
+Нода /chassis/rover_feedback перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

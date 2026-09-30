@@ -1,0 +1,2 @@
+Нода /perception/camera_map_detector перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

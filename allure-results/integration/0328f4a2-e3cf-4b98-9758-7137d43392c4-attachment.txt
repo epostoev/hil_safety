@@ -1,0 +1,14 @@
+INFO     /mrm_arbiter:base_hil_test.py:91 === Начало теста для /mrm_arbiter ===
+INFO     /mrm_arbiter:base_hil_test.py:42 Нода /mrm_arbiter жива True
+INFO     /mrm_arbiter:base_hil_test.py:42 Нода /mrm_arbiter жива True
+INFO     /mrm_arbiter:base_hil_test.py:94 === Завершение теста для /mrm_arbiter ===
+INFO     /data_logging/rosbag2_recorder:base_hil_test.py:94 === Завершение теста для /data_logging/rosbag2_recorder ===
+INFO     /v2x_publisher_node:base_hil_test.py:94 === Завершение теста для /v2x_publisher_node ===
+INFO     /sda_process_monitor/sda_process_monitor:base_hil_test.py:94 === Завершение теста для /sda_process_monitor/sda_process_monitor ===
+INFO     /safety/crash_detector:base_hil_test.py:94 === Завершение теста для /safety/crash_detector ===
+INFO     /generic/hal:base_hil_test.py:94 === Завершение теста для /generic/hal ===
+INFO     metrics_aggregator:base_hil_test.py:94 === Завершение теста для metrics_aggregator ===
+INFO     hardware_metrics:base_hil_test.py:94 === Завершение теста для hardware_metrics ===
+INFO     cloud_telemetry_node:base_hil_test.py:94 === Завершение теста для cloud_telemetry_node ===
+INFO     carapi_node:base_hil_test.py:94 === Завершение теста для carapi_node ===
+INFO     can_telemetry:base_hil_test.py:94 === Завершение теста для can_telemetry ===

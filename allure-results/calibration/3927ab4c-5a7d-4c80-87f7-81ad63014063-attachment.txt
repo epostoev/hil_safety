@@ -1,0 +1,16 @@
+INFO     synced_feature_extractor:base_hil_test.py:91 === Начало теста для synced_feature_extractor ===
+INFO     synced_feature_extractor:base_hil_test.py:42 Нода /calibration/rct/synced_feature_extractor жива True
+INFO     synced_feature_extractor:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     synced_feature_extractor:base_hil_test.py:251 Docker exec: ps aux | grep 'feature_extractors/lib/feature_extractors/synced_feature_extractor' | grep -v grep
+INFO     synced_feature_extractor:base_hil_test.py:262 Найден PID: 2739051
+INFO     synced_feature_extractor:kill_fault_injection.py:82 PID=2739051
+INFO     synced_feature_extractor:kill_fault_injection.py:91 Stamp ДО kill: 1790263912.243351135
+INFO     synced_feature_extractor:base_hil_test.py:251 Docker exec: kill -6 2739051
+INFO     synced_feature_extractor:kill_fault_injection.py:95 kill -6 отправлен PID=2739051. Ждём появления /calibration/rct/synced_feature_extractor в error_code 131346...
+INFO     synced_feature_extractor:kill_fault_injection.py:111 Результат: success=True, reaction=9.994ms (9993887ns), nodes=['/calibration/rct/synced_feature_extractor', '/perception/camera_tracker_cpp']
+INFO     synced_feature_extractor:kill_fault_injection.py:133 Triggered errors: 2
+INFO     synced_feature_extractor:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     synced_feature_extractor:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/calibration/rct/synced_feature_extractor","/perception/camera_tracke
+INFO     synced_feature_extractor:base_hil_test.py:42 Нода /calibration/rct/synced_feature_extractor жива True
+INFO     synced_feature_extractor:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     synced_feature_extractor:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.994ms

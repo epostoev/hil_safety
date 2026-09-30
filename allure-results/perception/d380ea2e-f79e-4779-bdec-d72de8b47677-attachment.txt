@@ -1,0 +1,2 @@
+Нода /perception/camera_lidar_fusion перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

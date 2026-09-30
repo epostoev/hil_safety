@@ -1,0 +1,3 @@
+INFO     perception_lanes_visualization_py:base_hil_test.py:91 === Начало теста для perception_lanes_visualization_py ===
+INFO     perception_lanes_visualization_py:base_hil_test.py:42 Нода /perception/visualization/perception_lanes_visualization_py жива True
+INFO     perception_lanes_visualization_py:base_hil_test.py:42 Нода /perception/visualization/perception_lanes_visualization_py жива True

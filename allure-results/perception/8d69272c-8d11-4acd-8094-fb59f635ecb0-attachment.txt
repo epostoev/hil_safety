@@ -1,0 +1,16 @@
+INFO     camera_box_detection:base_hil_test.py:91 === Начало теста для camera_box_detection ===
+INFO     camera_box_detection:base_hil_test.py:42 Нода /perception/camera_box_detection жива True
+INFO     camera_box_detection:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     camera_box_detection:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_camera_box_detection/lib/sat_perception_camera_box_detection/camera_box_detection_node' | grep -v grep
+INFO     camera_box_detection:base_hil_test.py:262 Найден PID: 394311
+INFO     camera_box_detection:kill_fault_injection.py:82 PID=394311
+INFO     camera_box_detection:kill_fault_injection.py:91 Stamp ДО kill: 1790326530.302587471
+INFO     camera_box_detection:base_hil_test.py:251 Docker exec: kill -6 394311
+INFO     camera_box_detection:kill_fault_injection.py:95 kill -6 отправлен PID=394311. Ждём появления /perception/camera_box_detection в error_code 131346...
+INFO     camera_box_detection:kill_fault_injection.py:111 Результат: success=True, reaction=16.139ms (16138522ns), nodes=['/perception/camera_box_detection', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     camera_box_detection:kill_fault_injection.py:133 Triggered errors: 2
+INFO     camera_box_detection:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     camera_box_detection:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_box_detection","/perception/camera_tracker_cpp","/
+INFO     camera_box_detection:base_hil_test.py:42 Нода /perception/camera_box_detection жива True
+INFO     camera_box_detection:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     camera_box_detection:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 16.139ms

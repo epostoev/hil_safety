@@ -1,0 +1,2 @@
+Нода /can_telemetry перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

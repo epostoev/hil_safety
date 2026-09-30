@@ -1,0 +1,2 @@
+Нода /planning/maneuver_planner_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

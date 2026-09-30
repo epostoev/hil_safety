@@ -1,0 +1,5 @@
+success:      True
+error_code:   0x00020112 (131346)
+nodes:        ['/sensing/roi_selector', '/calibration/rct/runtime_radar_autocalibration', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+reaction_ms:  19.999ms
+reaction_ns:  19998779ns

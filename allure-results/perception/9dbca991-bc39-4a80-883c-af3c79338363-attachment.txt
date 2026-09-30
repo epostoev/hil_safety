@@ -1,0 +1,16 @@
+INFO     camera_map_detector:base_hil_test.py:91 === Начало теста для camera_map_detector ===
+INFO     camera_map_detector:base_hil_test.py:42 Нода /perception/camera_map_detector жива True
+INFO     camera_map_detector:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     camera_map_detector:base_hil_test.py:251 Docker exec: ps aux | grep 'camera_map_detector/lib/camera_map_detector/camera_map_detector' | grep -v grep
+INFO     camera_map_detector:base_hil_test.py:262 Найден PID: 164249
+INFO     camera_map_detector:kill_fault_injection.py:82 PID=164249
+INFO     camera_map_detector:kill_fault_injection.py:91 Stamp ДО kill: 1790320554.925326006
+INFO     camera_map_detector:base_hil_test.py:251 Docker exec: kill -6 164249
+INFO     camera_map_detector:kill_fault_injection.py:95 kill -6 отправлен PID=164249. Ждём появления /perception/camera_map_detector в error_code 131346...
+INFO     camera_map_detector:kill_fault_injection.py:111 Результат: success=True, reaction=16.014ms (16013920ns), nodes=['/perception/camera_map_detector', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     camera_map_detector:kill_fault_injection.py:133 Triggered errors: 2
+INFO     camera_map_detector:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/speed_limit_classifier","/per
+INFO     camera_map_detector:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_map_detector","/perception/camera_tracker_cpp","/s
+INFO     camera_map_detector:base_hil_test.py:42 Нода /perception/camera_map_detector жива True
+INFO     camera_map_detector:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     camera_map_detector:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 16.014ms

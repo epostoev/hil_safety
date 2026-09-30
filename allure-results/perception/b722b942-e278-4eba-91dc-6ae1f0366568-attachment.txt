@@ -1,0 +1,2 @@
+Нода /perception/road_lines_3d перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

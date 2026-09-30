@@ -1,0 +1,16 @@
+INFO     carapi_node:base_hil_test.py:91 === Начало теста для carapi_node ===
+INFO     carapi_node:base_hil_test.py:42 Нода /carapi_node жива True
+INFO     carapi_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     carapi_node:base_hil_test.py:251 Docker exec: ps aux | grep 'carapi_node' | grep -v grep
+INFO     carapi_node:base_hil_test.py:262 Найден PID: 2827572
+INFO     carapi_node:kill_fault_injection.py:82 PID=2827572
+INFO     carapi_node:kill_fault_injection.py:91 Stamp ДО kill: 1790266231.435036578
+INFO     carapi_node:base_hil_test.py:251 Docker exec: kill -6 2827572
+INFO     carapi_node:kill_fault_injection.py:95 kill -6 отправлен PID=2827572. Ждём появления /carapi_node в error_code 131346...
+INFO     carapi_node:kill_fault_injection.py:111 Результат: success=True, reaction=9.988ms (9988117ns), nodes=['/carapi_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     carapi_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     carapi_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     carapi_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/carapi_node","/perception/camera_tracker_cpp","/sensing/cloud_builde
+INFO     carapi_node:base_hil_test.py:42 Нода /carapi_node жива True
+INFO     carapi_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     carapi_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.988ms

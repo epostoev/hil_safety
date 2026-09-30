@@ -1,0 +1,17 @@
+INFO     chassis_bridge_udp_reader:base_hil_test.py:91 === Начало теста для chassis_bridge_udp_reader ===
+INFO     chassis_bridge_udp_reader:base_hil_test.py:42 Нода /chassis/chassis_bridge_udp_reader жива True
+INFO     chassis_bridge_udp_reader:base_hil_test.py:42 Нода /chassis/chassis_bridge_udp_reader жива True
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     chassis_bridge_udp_reader:base_hil_test.py:251 Docker exec: ps aux | grep 'chassis_bridge/lib/chassis_bridge/chassis_bridge_udp_reader' | grep -v grep
+INFO     chassis_bridge_udp_reader:base_hil_test.py:262 Найден PID: 203964
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:82 PID=203964
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:91 Stamp ДО kill: 1790086968.439825992
+INFO     chassis_bridge_udp_reader:base_hil_test.py:251 Docker exec: kill -6 203964
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:95 kill -6 отправлен PID=203964. Ждём появления /chassis/chassis_bridge_udp_reader в error_code 131346...
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:111 Результат: success=True, reaction=13.292ms (13292124ns), nodes=['/chassis/chassis_bridge_udp_reader', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:133 Triggered errors: 2
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/chassis/chassis_bridge_udp_reader","/perception/camera_tracker_cpp",
+INFO     chassis_bridge_udp_reader:base_hil_test.py:42 Нода /chassis/chassis_bridge_udp_reader жива True
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     chassis_bridge_udp_reader:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 13.292ms

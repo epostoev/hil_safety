@@ -1,0 +1,3 @@
+INFO     imu_node:base_hil_test.py:91 === Начало теста для imu_node ===
+INFO     imu_node:base_hil_test.py:42 Нода /sensing/imu1/imu_node жива True
+INFO     imu_node:base_hil_test.py:42 Нода /sensing/imu1/imu_node жива True

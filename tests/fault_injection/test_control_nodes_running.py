@@ -6,11 +6,11 @@ CONTROL_NODES = [
     ("control_chassis_bridge_udp_reader_node_alive", "TC-CTL-KILL-001", "/chassis/chassis_bridge_udp_reader"),
     ("control_rover_feedback_node_alive",            "TC-CTL-KILL-002", "/chassis/rover_feedback"),
     ("control_chassis_adapter_sender_node_alive",    "TC-CTL-KILL-003", "/chassis/chassis_adapter_sender"),
-    # ("control_chassis_adapter_receiver_node_alive",  "TC-CTL-KILL-004", "/chassis/chassis_adapter_receiver"),
-    # ("control_input_monitor_node_alive",             "TC-CTL-KILL-005", "/control/input_monitor"),
-    # ("control_mpc_node_alive",                       "TC-CTL-KILL-006", "/control/mpc"),
-    # ("control_telecan_body_node_alive",              "TC-CTL-KILL-007", "/chassis/telecan_body"),
-    # ("control_safety_traffic_analyzer_node_alive",   "TC-CTL-KILL-008", "/chassis/safety_traffic_analyzer"),
+    ("control_chassis_adapter_receiver_node_alive",  "TC-CTL-KILL-004", "/chassis/chassis_adapter_receiver"),
+    ("control_input_monitor_node_alive",             "TC-CTL-KILL-005", "/control/input_monitor"),
+    ("control_mpc_node_alive",                       "TC-CTL-KILL-006", "/control/mpc"),
+    ("control_telecan_body_node_alive",              "TC-CTL-KILL-007", "/chassis/telecan_body"),
+    ("control_safety_traffic_analyzer_node_alive",   "TC-CTL-KILL-008", "/chassis/safety_traffic_analyzer"),
 ]
 
 

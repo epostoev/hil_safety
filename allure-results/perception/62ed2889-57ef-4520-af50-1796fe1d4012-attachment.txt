@@ -1,0 +1,3 @@
+INFO     road_lines_tracker:base_hil_test.py:91 === Начало теста для road_lines_tracker ===
+INFO     road_lines_tracker:base_hil_test.py:42 Нода /perception/road_lines_tracker жива True
+INFO     road_lines_tracker:base_hil_test.py:42 Нода /perception/road_lines_tracker жива True

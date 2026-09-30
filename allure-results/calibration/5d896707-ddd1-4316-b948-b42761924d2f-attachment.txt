@@ -1,0 +1,3 @@
+INFO     cam_to_cam_controller:base_hil_test.py:91 === Начало теста для cam_to_cam_controller ===
+INFO     cam_to_cam_controller:base_hil_test.py:42 Нода /calibration/rct/cam_to_cam_controller жива True
+INFO     cam_to_cam_controller:base_hil_test.py:42 Нода /calibration/rct/cam_to_cam_controller жива True

@@ -1,0 +1,2 @@
+Нода /perception/road_surface_condition_detector_cpp перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

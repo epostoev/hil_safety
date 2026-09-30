@@ -1,0 +1,5 @@
+success:      True
+error_code:   0x00020112 (131346)
+nodes:        ['/localization/node_container', '/localization/localization', '/localization/lidar_localization', '/localization_initialization_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+reaction_ms:  9.966ms
+reaction_ns:  9966269ns

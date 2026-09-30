@@ -1,0 +1,2 @@
+Нода /visualization/objects_visualization перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

@@ -1,0 +1,2 @@
+Нода /perception/traffic_light_classifier перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

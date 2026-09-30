@@ -1,0 +1,1 @@
+{"uuid": "78d23e10-f33c-4e21-a45a-8ed1f5eca694", "children": ["708d813e-9ea9-4bb7-9607-bf5205ccca98"], "befores": [{"name": "control_mpc_node_alive", "status": "passed", "start": 1790086958565, "stop": 1790086959951}], "afters": [{"name": "control_mpc_node_alive::<lambda>", "start": 1790086965640}], "start": 1790086958565, "stop": 1790086965640}

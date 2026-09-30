@@ -1,0 +1,10 @@
+INFO     safety_traffic_analyzer:base_hil_test.py:91 === Начало теста для safety_traffic_analyzer ===
+INFO     safety_traffic_analyzer:base_hil_test.py:42 Нода /chassis/safety_traffic_analyzer жива False
+INFO     safety_traffic_analyzer:base_hil_test.py:94 === Завершение теста для safety_traffic_analyzer ===
+INFO     telecan_body:base_hil_test.py:94 === Завершение теста для telecan_body ===
+INFO     mpc:base_hil_test.py:94 === Завершение теста для mpc ===
+INFO     input_monitor:base_hil_test.py:94 === Завершение теста для input_monitor ===
+INFO     chassis_adapter_receiver:base_hil_test.py:94 === Завершение теста для chassis_adapter_receiver ===
+INFO     chassis_adapter_sender:base_hil_test.py:94 === Завершение теста для chassis_adapter_sender ===
+INFO     rover_feedback:base_hil_test.py:94 === Завершение теста для rover_feedback ===
+INFO     chassis_bridge_udp_reader:base_hil_test.py:94 === Завершение теста для chassis_bridge_udp_reader ===

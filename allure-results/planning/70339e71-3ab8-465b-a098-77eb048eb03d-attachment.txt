@@ -1,0 +1,3 @@
+INFO     maneuver_planner_node:base_hil_test.py:91 === Начало теста для maneuver_planner_node ===
+INFO     maneuver_planner_node:base_hil_test.py:42 Нода /planning/maneuver_planner_node жива True
+INFO     maneuver_planner_node:base_hil_test.py:42 Нода /planning/maneuver_planner_node жива True

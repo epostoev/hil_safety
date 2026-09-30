@@ -1,0 +1,3 @@
+INFO     radar_driver_node:base_hil_test.py:91 === Начало теста для radar_driver_node ===
+INFO     radar_driver_node:base_hil_test.py:42 Нода /sensing/radar_driver_node жива True
+INFO     radar_driver_node:base_hil_test.py:42 Нода /sensing/radar_driver_node жива True

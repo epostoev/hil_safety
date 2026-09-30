@@ -1,0 +1,16 @@
+INFO     /localization_output_gateway_node:base_hil_test.py:91 === Начало теста для /localization_output_gateway_node ===
+INFO     /localization_output_gateway_node:base_hil_test.py:42 Нода /localization_output_gateway_node жива True
+INFO     /localization_output_gateway_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     /localization_output_gateway_node:base_hil_test.py:251 Docker exec: ps aux | grep 'localization/lib/localization/localization_output_gateway_node' | grep -v grep
+INFO     /localization_output_gateway_node:base_hil_test.py:262 Найден PID: 3597734
+INFO     /localization_output_gateway_node:kill_fault_injection.py:82 PID=3597734
+INFO     /localization_output_gateway_node:kill_fault_injection.py:91 Stamp ДО kill: 1790697598.537606059
+INFO     /localization_output_gateway_node:base_hil_test.py:251 Docker exec: kill -6 3597734
+INFO     /localization_output_gateway_node:kill_fault_injection.py:95 kill -6 отправлен PID=3597734. Ждём появления /localization_output_gateway_node в error_code 131346...
+INFO     /localization_output_gateway_node:kill_fault_injection.py:111 Результат: success=True, reaction=19.51ms (19509563ns), nodes=['/localization_output_gateway_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     /localization_output_gateway_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     /localization_output_gateway_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     /localization_output_gateway_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/localization_output_gateway_node","/perception/camera_tracker_cpp","
+INFO     /localization_output_gateway_node:base_hil_test.py:42 Нода /localization_output_gateway_node жива True
+INFO     /localization_output_gateway_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     /localization_output_gateway_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 19.51ms

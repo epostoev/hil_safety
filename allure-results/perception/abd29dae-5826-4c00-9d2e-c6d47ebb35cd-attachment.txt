@@ -1,0 +1,3 @@
+INFO     signals_classifier:base_hil_test.py:91 === Начало теста для signals_classifier ===
+INFO     signals_classifier:base_hil_test.py:42 Нода /perception/signals_classifier_cpp жива True
+INFO     signals_classifier:base_hil_test.py:42 Нода /perception/signals_classifier_cpp жива True

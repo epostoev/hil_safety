@@ -1,0 +1,3 @@
+INFO     traffic_light_pipeline:base_hil_test.py:91 === Начало теста для traffic_light_pipeline ===
+INFO     traffic_light_pipeline:base_hil_test.py:42 Нода /perception/traffic_light_pipeline жива True
+INFO     traffic_light_pipeline:base_hil_test.py:42 Нода /perception/traffic_light_pipeline жива True

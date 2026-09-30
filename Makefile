@@ -114,7 +114,7 @@ allure_localization:
 
 allure_calibration:
 	$(DOCKER_RUN_ALLURE) $(IMAGE):$(TAG) \
-		pytest tests/fault_injection/test_calibration_nodes_running_.py \
+		pytest tests/fault_injection/test_calibration_nodes_running.py \
 		        tests/fault_injection/test_calibration_kill.py \
 		-v -s --alluredir=allure-results/calibration 
 

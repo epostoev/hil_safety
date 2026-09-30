@@ -1,0 +1,16 @@
+INFO     road_lines_tracker:base_hil_test.py:91 === Начало теста для road_lines_tracker ===
+INFO     road_lines_tracker:base_hil_test.py:42 Нода /perception/road_lines_tracker жива True
+INFO     road_lines_tracker:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     road_lines_tracker:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_road_lines_tracker/lib/sat_perception_road_lines_tracker/road_lines_tracker_node' | grep -v grep
+INFO     road_lines_tracker:base_hil_test.py:262 Найден PID: 285045
+INFO     road_lines_tracker:kill_fault_injection.py:82 PID=285045
+INFO     road_lines_tracker:kill_fault_injection.py:91 Stamp ДО kill: 1790323681.748788350
+INFO     road_lines_tracker:base_hil_test.py:251 Docker exec: kill -6 285045
+INFO     road_lines_tracker:kill_fault_injection.py:95 kill -6 отправлен PID=285045. Ждём появления /perception/road_lines_tracker в error_code 131346...
+INFO     road_lines_tracker:kill_fault_injection.py:111 Результат: success=True, reaction=10.0ms (9999581ns), nodes=['/perception/road_lines_tracker', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     road_lines_tracker:kill_fault_injection.py:133 Triggered errors: 2
+INFO     road_lines_tracker:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     road_lines_tracker:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/road_lines_tracker","/perception/camera_tracker_cpp","/se
+INFO     road_lines_tracker:base_hil_test.py:42 Нода /perception/road_lines_tracker жива True
+INFO     road_lines_tracker:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     road_lines_tracker:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.0ms

@@ -1,0 +1,16 @@
+INFO     ground_segmenter:base_hil_test.py:91 === Начало теста для ground_segmenter ===
+INFO     ground_segmenter:base_hil_test.py:42 Нода /perception/ground_segmenter жива True
+INFO     ground_segmenter:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     ground_segmenter:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_ground_segmenter/lib/sat_perception_ground_segmenter/ground_segmenter_node' | grep -v grep
+INFO     ground_segmenter:base_hil_test.py:262 Найден PID: 427074
+INFO     ground_segmenter:kill_fault_injection.py:82 PID=427074
+INFO     ground_segmenter:kill_fault_injection.py:91 Stamp ДО kill: 1790327382.404920806
+INFO     ground_segmenter:base_hil_test.py:251 Docker exec: kill -6 427074
+INFO     ground_segmenter:kill_fault_injection.py:95 kill -6 отправлен PID=427074. Ждём появления /perception/ground_segmenter в error_code 131346...
+INFO     ground_segmenter:kill_fault_injection.py:111 Результат: success=True, reaction=5.22ms (5219604ns), nodes=['/perception/ground_segmenter', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     ground_segmenter:kill_fault_injection.py:133 Triggered errors: 2
+INFO     ground_segmenter:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/objects_tracker","/perception/speed_limit_classifier","/p
+INFO     ground_segmenter:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/ground_segmenter","/perception/camera_tracker_cpp","/sens
+INFO     ground_segmenter:base_hil_test.py:42 Нода /perception/ground_segmenter жива True
+INFO     ground_segmenter:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     ground_segmenter:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 5.22ms

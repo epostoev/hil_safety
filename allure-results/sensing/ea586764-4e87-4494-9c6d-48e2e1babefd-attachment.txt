@@ -1,0 +1,16 @@
+INFO     crash_video_recorder:base_hil_test.py:91 === Начало теста для crash_video_recorder ===
+INFO     crash_video_recorder:base_hil_test.py:42 Нода /sensing/crash_video_recorder жива True
+INFO     crash_video_recorder:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     crash_video_recorder:base_hil_test.py:251 Docker exec: ps aux | grep 'crash_video_recorder/lib/crash_video_recorder/crash_video_recorder_node' | grep -v grep
+INFO     crash_video_recorder:base_hil_test.py:262 Найден PID: 2982251
+INFO     crash_video_recorder:kill_fault_injection.py:82 PID=2982251
+INFO     crash_video_recorder:kill_fault_injection.py:91 Stamp ДО kill: 1790686122.816018445
+INFO     crash_video_recorder:base_hil_test.py:251 Docker exec: kill -6 2982251
+INFO     crash_video_recorder:kill_fault_injection.py:95 kill -6 отправлен PID=2982251. Ждём появления /sensing/crash_video_recorder в error_code 131346...
+INFO     crash_video_recorder:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     crash_video_recorder:kill_fault_injection.py:133 Triggered errors: 3
+INFO     crash_video_recorder:kill_fault_injection.py:135   0x0003FF12 (261906): {"/perception/camera_radar_fusion":{"/radar_roof_front_right/cluster_list":"Call
+INFO     crash_video_recorder:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/box_segmentation_fusion","/sensing/auto_cleaning","/local
+INFO     crash_video_recorder:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     crash_video_recorder:base_hil_test.py:42 Нода /sensing/crash_video_recorder жива True
+INFO     crash_video_recorder:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅

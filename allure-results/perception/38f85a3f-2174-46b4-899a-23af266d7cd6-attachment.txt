@@ -1,0 +1,16 @@
+INFO     boom_barrier_detector:base_hil_test.py:91 === Начало теста для boom_barrier_detector ===
+INFO     boom_barrier_detector:base_hil_test.py:42 Нода /perception/boom_barrier_detector жива True
+INFO     boom_barrier_detector:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     boom_barrier_detector:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_boom_barrier_detector/lib/sat_perception_boom_barrier_detector/boom_barrier_detector_node ' | grep -v grep
+INFO     boom_barrier_detector:base_hil_test.py:262 Найден PID: 2936623
+INFO     boom_barrier_detector:kill_fault_injection.py:82 PID=2936623
+INFO     boom_barrier_detector:kill_fault_injection.py:91 Stamp ДО kill: 1790319990.947410155
+INFO     boom_barrier_detector:base_hil_test.py:251 Docker exec: kill -6 2936623
+INFO     boom_barrier_detector:kill_fault_injection.py:95 kill -6 отправлен PID=2936623. Ждём появления /perception/boom_barrier_detector в error_code 131346...
+INFO     boom_barrier_detector:kill_fault_injection.py:111 Результат: success=True, reaction=9.998ms (9998209ns), nodes=['/perception/boom_barrier_detector', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     boom_barrier_detector:kill_fault_injection.py:133 Triggered errors: 2
+INFO     boom_barrier_detector:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     boom_barrier_detector:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/boom_barrier_detector","/perception/camera_tracker_cpp","
+INFO     boom_barrier_detector:base_hil_test.py:42 Нода /perception/boom_barrier_detector жива True
+INFO     boom_barrier_detector:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     boom_barrier_detector:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.998ms

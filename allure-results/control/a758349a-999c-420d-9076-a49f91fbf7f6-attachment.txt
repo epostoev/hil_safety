@@ -1,0 +1,17 @@
+INFO     input_monitor:base_hil_test.py:91 === Начало теста для input_monitor ===
+INFO     input_monitor:base_hil_test.py:42 Нода /control/input_monitor жива True
+INFO     input_monitor:base_hil_test.py:42 Нода /control/input_monitor жива True
+INFO     input_monitor:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     input_monitor:base_hil_test.py:251 Docker exec: ps aux | grep 'control_input_monitor/lib/control_input_monitor/control_input_monitor' | grep -v grep
+INFO     input_monitor:base_hil_test.py:262 Найден PID: 294901
+INFO     input_monitor:kill_fault_injection.py:82 PID=294901
+INFO     input_monitor:kill_fault_injection.py:91 Stamp ДО kill: 1790088090.95375073
+INFO     input_monitor:base_hil_test.py:251 Docker exec: kill -6 294901
+INFO     input_monitor:kill_fault_injection.py:95 kill -6 отправлен PID=294901. Ждём появления /control/input_monitor в error_code 131346...
+INFO     input_monitor:kill_fault_injection.py:111 Результат: success=True, reaction=10.088ms (10087573ns), nodes=['/control/input_monitor', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     input_monitor:kill_fault_injection.py:133 Triggered errors: 2
+INFO     input_monitor:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     input_monitor:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/control/input_monitor","/perception/camera_tracker_cpp","/sensing/cl
+INFO     input_monitor:base_hil_test.py:42 Нода /control/input_monitor жива True
+INFO     input_monitor:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     input_monitor:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.088ms

@@ -1,0 +1,2 @@
+Нода /chassis/chassis_bridge_udp_reader перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

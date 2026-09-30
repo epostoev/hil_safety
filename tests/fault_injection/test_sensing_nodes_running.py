@@ -9,11 +9,14 @@ SENSING_NODES = [
     ("odometry_velocity_node",   "TC-SENSING-PRE-004", "/sensing/odometry_velocity_node"),
     ("radar_driver_node",        "TC-SENSING-PRE-005", "/sensing/radar_driver_node"),
     ("ublox_driver_node",        "TC-SENSING-PRE-006", "/sensing/ublox1/ublox_driver_node"),
-    # ("radar_visualization_node", "TC-SENSING-PRE-007", "/sensing/visualization/radar_visualization_node"),
+    # ("radar_visualization_node","TC-SENSING-PRE-007", "/sensing/visualization/radar_visualization_node"),
     ("roi_selector_node",        "TC-SENSING-PRE-008", "/sensing/roi_selector"),
-    # ("camera_decoder_node",      "TC-SENSING-PRE-009", "/sensing/camera_decoder"),
-    ("crash_video_recorder_node","TC-SENSING-PRE-010", "/sensing/crash_video_recorder")
+    # ("camera_decoder_node",    "TC-SENSING-PRE-009", "/sensing/camera_decoder"),
+    ("crash_video_recorder_node","TC-SENSING-PRE-010", "/sensing/crash_video_recorder"),
+    ("acrux_listener",           "TC-SENSING-PRE-011", "/acrux_listener"),
+    ("camera_synchronizer",        "TC-SENSING-PRE-012", "/camera_synchronizer")
 ]
+# /sensing/cloud_builder
 
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.title('Тест: Состояние ноды в системе')

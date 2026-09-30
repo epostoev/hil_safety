@@ -1,0 +1,2 @@
+Нода /calibration/rct/synced_feature_extractor перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

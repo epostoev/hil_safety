@@ -1,0 +1,16 @@
+INFO     auto_cleaning:base_hil_test.py:91 === Начало теста для auto_cleaning ===
+INFO     auto_cleaning:base_hil_test.py:42 Нода /sensing/auto_cleaning жива True
+INFO     auto_cleaning:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     auto_cleaning:base_hil_test.py:251 Docker exec: ps aux | grep 'auto_cleaning/lib/auto_cleaning/auto_cleaning_node' | grep -v grep
+INFO     auto_cleaning:base_hil_test.py:262 Найден PID: 2982241
+INFO     auto_cleaning:kill_fault_injection.py:82 PID=2982241
+INFO     auto_cleaning:kill_fault_injection.py:91 Stamp ДО kill: 1790682511.58788044
+INFO     auto_cleaning:base_hil_test.py:251 Docker exec: kill -6 2982241
+INFO     auto_cleaning:kill_fault_injection.py:95 kill -6 отправлен PID=2982241. Ждём появления /sensing/auto_cleaning в error_code 131346...
+INFO     auto_cleaning:kill_fault_injection.py:111 Результат: success=False, reaction=Nonems (Nonens), nodes=['/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     auto_cleaning:kill_fault_injection.py:133 Triggered errors: 3
+INFO     auto_cleaning:kill_fault_injection.py:135   0x0003FF12 (261906): {"/perception/camera_radar_fusion":{"/radar_roof_front_right/cluster_list":"Call
+INFO     auto_cleaning:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     auto_cleaning:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracker_cpp","/sensing/cloud_builder"]}
+INFO     auto_cleaning:base_hil_test.py:42 Нода /sensing/auto_cleaning жива True
+INFO     auto_cleaning:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅

@@ -1,0 +1,2 @@
+INFO     lidar_noise_detector:base_hil_test.py:91 === Начало теста для lidar_noise_detector ===
+INFO     lidar_noise_detector:base_hil_test.py:42 Нода /perception/lidar_noise_detector жива False

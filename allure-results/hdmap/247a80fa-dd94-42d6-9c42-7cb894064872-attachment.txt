@@ -1,0 +1,6 @@
+INFO     issue_reporter:base_hil_test.py:91 === Начало теста для issue_reporter ===
+INFO     issue_reporter:base_hil_test.py:42 Нода /hdmap/issue_reporter жива False
+INFO     issue_reporter:base_hil_test.py:94 === Завершение теста для issue_reporter ===
+INFO     rtk_provider_node:base_hil_test.py:94 === Завершение теста для rtk_provider_node ===
+INFO     dynamic_objects_service_node:base_hil_test.py:94 === Завершение теста для dynamic_objects_service_node ===
+INFO     hdmap_service_node:base_hil_test.py:94 === Завершение теста для hdmap_service_node ===

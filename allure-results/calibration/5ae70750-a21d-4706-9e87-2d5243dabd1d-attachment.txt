@@ -1,0 +1,3 @@
+INFO     synced_feature_extractor:base_hil_test.py:91 === Начало теста для synced_feature_extractor ===
+INFO     synced_feature_extractor:base_hil_test.py:42 Нода /calibration/rct/synced_feature_extractor жива True
+INFO     synced_feature_extractor:base_hil_test.py:42 Нода /calibration/rct/synced_feature_extractor жива True

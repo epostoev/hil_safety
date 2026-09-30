@@ -1,0 +1,2 @@
+Нода /intrinsic_publisher перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

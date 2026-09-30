@@ -1,0 +1,16 @@
+INFO     hardware_metrics:base_hil_test.py:91 === Начало теста для hardware_metrics ===
+INFO     hardware_metrics:base_hil_test.py:42 Нода /hardware_metrics жива True
+INFO     hardware_metrics:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     hardware_metrics:base_hil_test.py:251 Docker exec: ps aux | grep 'hardware_metrics/lib/hardware_metrics/hardware_metrics_node' | grep -v grep
+INFO     hardware_metrics:base_hil_test.py:262 Найден PID: 2849763
+INFO     hardware_metrics:kill_fault_injection.py:82 PID=2849763
+INFO     hardware_metrics:kill_fault_injection.py:91 Stamp ДО kill: 1790266797.558835263
+INFO     hardware_metrics:base_hil_test.py:251 Docker exec: kill -6 2849763
+INFO     hardware_metrics:kill_fault_injection.py:95 kill -6 отправлен PID=2849763. Ждём появления /hardware_metrics в error_code 131346...
+INFO     hardware_metrics:kill_fault_injection.py:111 Результат: success=True, reaction=20.001ms (20000588ns), nodes=['/hardware_metrics', '/sensing/cloud_builder']
+INFO     hardware_metrics:kill_fault_injection.py:133 Triggered errors: 2
+INFO     hardware_metrics:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     hardware_metrics:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/hardware_metrics","/sensing/cloud_builder"]}
+INFO     hardware_metrics:base_hil_test.py:42 Нода /hardware_metrics жива True
+INFO     hardware_metrics:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     hardware_metrics:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 20.001ms

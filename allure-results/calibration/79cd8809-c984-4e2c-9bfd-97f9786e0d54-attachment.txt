@@ -1,0 +1,2 @@
+Нода /calibration/rct/imu/imu_baselink_runtime_calibration перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

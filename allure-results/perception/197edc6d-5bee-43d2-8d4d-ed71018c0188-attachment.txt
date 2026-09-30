@@ -1,0 +1,16 @@
+INFO     traffic_light_pipeline:base_hil_test.py:91 === Начало теста для traffic_light_pipeline ===
+INFO     traffic_light_pipeline:base_hil_test.py:42 Нода /perception/traffic_light_pipeline жива True
+INFO     traffic_light_pipeline:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     traffic_light_pipeline:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_traffic_light_pipeline/lib/sat_perception_traffic_light_pipeline/traffic_light_pipeline_node' | grep -v grep
+INFO     traffic_light_pipeline:base_hil_test.py:262 Найден PID: 371951
+INFO     traffic_light_pipeline:kill_fault_injection.py:82 PID=371951
+INFO     traffic_light_pipeline:kill_fault_injection.py:91 Stamp ДО kill: 1790325955.981516026
+INFO     traffic_light_pipeline:base_hil_test.py:251 Docker exec: kill -6 371951
+INFO     traffic_light_pipeline:kill_fault_injection.py:95 kill -6 отправлен PID=371951. Ждём появления /perception/traffic_light_pipeline в error_code 131346...
+INFO     traffic_light_pipeline:kill_fault_injection.py:111 Результат: success=True, reaction=9.994ms (9993788ns), nodes=['/perception/traffic_light_pipeline', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     traffic_light_pipeline:kill_fault_injection.py:133 Triggered errors: 2
+INFO     traffic_light_pipeline:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     traffic_light_pipeline:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/traffic_light_pipeline","/perception/camera_tracker_cpp",
+INFO     traffic_light_pipeline:base_hil_test.py:42 Нода /perception/traffic_light_pipeline жива True
+INFO     traffic_light_pipeline:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     traffic_light_pipeline:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.994ms

@@ -1,0 +1,3 @@
+INFO     box_segmentation_fusion:base_hil_test.py:91 === Начало теста для box_segmentation_fusion ===
+INFO     box_segmentation_fusion:base_hil_test.py:42 Нода /perception/box_segmentation_fusion жива True
+INFO     box_segmentation_fusion:base_hil_test.py:42 Нода /perception/box_segmentation_fusion жива True

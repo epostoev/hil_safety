@@ -1,0 +1,3 @@
+INFO     /localization_output_gateway_node:base_hil_test.py:91 === Начало теста для /localization_output_gateway_node ===
+INFO     /localization_output_gateway_node:base_hil_test.py:42 Нода /localization_output_gateway_node жива True
+INFO     /localization_output_gateway_node:base_hil_test.py:42 Нода /localization_output_gateway_node жива True

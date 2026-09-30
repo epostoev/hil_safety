@@ -1,0 +1,17 @@
+INFO     camera_tracks_merger:base_hil_test.py:91 === Начало теста для camera_tracks_merger ===
+INFO     camera_tracks_merger:base_hil_test.py:42 Нода /perception/camera_tracks_merger жива True
+INFO     camera_tracks_merger:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     camera_tracks_merger:base_hil_test.py:251 Docker exec: ps aux | grep 'camera_tracks_merger/lib/camera_tracks_merger/camera_tracks_merger' | grep -v grep
+INFO     camera_tracks_merger:base_hil_test.py:262 Найден PID: 186033
+INFO     camera_tracks_merger:kill_fault_injection.py:82 PID=186033
+INFO     camera_tracks_merger:kill_fault_injection.py:91 Stamp ДО kill: 1790321114.846423336
+INFO     camera_tracks_merger:base_hil_test.py:251 Docker exec: kill -6 186033
+INFO     camera_tracks_merger:kill_fault_injection.py:95 kill -6 отправлен PID=186033. Ждём появления /perception/camera_tracks_merger в error_code 131346...
+INFO     camera_tracks_merger:kill_fault_injection.py:111 Результат: success=True, reaction=2006.629ms (2006629273ns), nodes=['/perception/camera_tracks_merger', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     camera_tracks_merger:kill_fault_injection.py:133 Triggered errors: 3
+INFO     camera_tracks_merger:kill_fault_injection.py:135   0x0003FF12 (261906): {"/perception/camera_radar_fusion":{"/radar_roof_front_right/cluster_list":"Call
+INFO     camera_tracks_merger:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     camera_tracks_merger:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/camera_tracks_merger","/perception/camera_tracker_cpp","/
+INFO     camera_tracks_merger:base_hil_test.py:42 Нода /perception/camera_tracks_merger жива True
+INFO     camera_tracks_merger:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     camera_tracks_merger:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 2006.629ms

@@ -1,0 +1,5 @@
+success:      True
+error_code:   0x00020112 (131346)
+nodes:        ['/perception/camera_map_detector', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+reaction_ms:  16.014ms
+reaction_ns:  16013920ns

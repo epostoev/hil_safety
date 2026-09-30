@@ -1,0 +1,3 @@
+INFO     ground_segmenter:base_hil_test.py:91 === Начало теста для ground_segmenter ===
+INFO     ground_segmenter:base_hil_test.py:42 Нода /perception/ground_segmenter жива True
+INFO     ground_segmenter:base_hil_test.py:42 Нода /perception/ground_segmenter жива True

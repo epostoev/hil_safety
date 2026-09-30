@@ -74,3 +74,24 @@ class RobotStatePublisherNode(BaseHILTest):
 
     def __init__(self):
         super().__init__(node_name="robot_state_publisher", timeout=15)
+
+class TfEstimationNode(BaseHILTest):
+    NODE_NAME = "/calibration/rct/tf_estimation_node"
+    PROCESS_NAME = "/cam_to_cam_tf_estimators/lib/cam_to_cam_tf_estimators/features_cam_to_cam_tf_estimation_node"
+
+    def __init__(self):
+        super().__init__(node_name="tf_estimation_node", timeout=15)
+
+class SyncedFeatureExtractor(BaseHILTest):
+    NODE_NAME = "/calibration/rct/synced_feature_extractor"
+    PROCESS_NAME = "feature_extractors/lib/feature_extractors/synced_feature_extractor"
+
+    def __init__(self):
+        super().__init__(node_name="synced_feature_extractor", timeout=15)
+
+class IntrinsicRepairService(BaseHILTest):
+    NODE_NAME = "/intrinsic_repair_service"
+    PROCESS_NAME = "intrinsic_repair_service/lib/intrinsic_repair_service/intrinsic_repair"
+
+    def __init__(self):
+        super().__init__(node_name="intrinsic_repair_service", timeout=15)

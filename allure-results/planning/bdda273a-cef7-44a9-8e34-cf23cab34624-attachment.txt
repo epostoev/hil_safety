@@ -1,0 +1,2 @@
+Нода /planning/trajectory_planner_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

@@ -1,0 +1,16 @@
+INFO     maneuver_planner_node:base_hil_test.py:91 === Начало теста для maneuver_planner_node ===
+INFO     maneuver_planner_node:base_hil_test.py:42 Нода /planning/maneuver_planner_node жива True
+INFO     maneuver_planner_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     maneuver_planner_node:base_hil_test.py:251 Docker exec: ps aux | grep 'maneuver_planner/lib/maneuver_planner/maneuver_planner_node' | grep -v grep
+INFO     maneuver_planner_node:base_hil_test.py:262 Найден PID: 3688057
+INFO     maneuver_planner_node:kill_fault_injection.py:82 PID=3688057
+INFO     maneuver_planner_node:kill_fault_injection.py:91 Stamp ДО kill: 1790701847.403252594
+INFO     maneuver_planner_node:base_hil_test.py:251 Docker exec: kill -6 3688057
+INFO     maneuver_planner_node:kill_fault_injection.py:95 kill -6 отправлен PID=3688057. Ждём появления /planning/maneuver_planner_node в error_code 131346...
+INFO     maneuver_planner_node:kill_fault_injection.py:111 Результат: success=True, reaction=13.558ms (13558362ns), nodes=['/planning/maneuver_planner_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     maneuver_planner_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     maneuver_planner_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/planning/maneuver_planner_node","/acrux_listener","/prediction","/pe
+INFO     maneuver_planner_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/planning/maneuver_planner_node","/perception/camera_tracker_cpp","/s
+INFO     maneuver_planner_node:base_hil_test.py:42 Нода /planning/maneuver_planner_node жива True
+INFO     maneuver_planner_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     maneuver_planner_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 13.558ms

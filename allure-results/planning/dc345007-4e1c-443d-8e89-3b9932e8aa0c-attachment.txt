@@ -1,0 +1,2 @@
+0x00010112 (65810): {"nodes":["/perception/point_cloud_clusterizer","/perception/lidar_noise_detecto
+0x00020112 (131346): {"nodes":["/perception/objects_tracker","/planning/path_loader_node","/perceptio

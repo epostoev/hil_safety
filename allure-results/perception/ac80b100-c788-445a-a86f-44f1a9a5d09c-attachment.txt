@@ -1,0 +1,3 @@
+INFO     roadworks_fusion:base_hil_test.py:91 === Начало теста для roadworks_fusion ===
+INFO     roadworks_fusion:base_hil_test.py:42 Нода /perception/roadworks_fusion жива True
+INFO     roadworks_fusion:base_hil_test.py:42 Нода /perception/roadworks_fusion жива True

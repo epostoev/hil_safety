@@ -1,0 +1,18 @@
+INFO     prediction:base_hil_test.py:91 === Начало теста для prediction ===
+INFO     prediction:base_hil_test.py:42 Нода /prediction жива True
+INFO     prediction:base_hil_test.py:42 Нода /prediction жива True
+INFO     prediction:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     prediction:base_hil_test.py:251 Docker exec: ps aux | grep 'prediction/lib/prediction/prediction' | grep -v grep
+INFO     prediction:base_hil_test.py:262 Найден PID: 3643523
+INFO     prediction:kill_fault_injection.py:82 PID=3643523
+INFO     prediction:kill_fault_injection.py:91 Stamp ДО kill: 1790699343.856122739
+INFO     prediction:base_hil_test.py:251 Docker exec: kill -6 3643523
+INFO     prediction:kill_fault_injection.py:95 kill -6 отправлен PID=3643523. Ждём появления /prediction в error_code 131346...
+INFO     prediction:kill_fault_injection.py:111 Результат: success=True, reaction=10.011ms (10010798ns), nodes=['/prediction', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     prediction:kill_fault_injection.py:133 Triggered errors: 2
+INFO     prediction:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     prediction:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/prediction","/perception/camera_tracker_cpp","/sensing/cloud_builder
+INFO     prediction:base_hil_test.py:42 Нода /prediction жива True
+INFO     prediction:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     prediction:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.011ms
+INFO     prediction:base_hil_test.py:94 === Завершение теста для prediction ===

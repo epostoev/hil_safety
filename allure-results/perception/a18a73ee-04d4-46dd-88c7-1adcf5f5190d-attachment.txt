@@ -1,0 +1,3 @@
+INFO     road_lines_3d:base_hil_test.py:91 === Начало теста для road_lines_3d ===
+INFO     road_lines_3d:base_hil_test.py:42 Нода /perception/road_lines_3d жива True
+INFO     road_lines_3d:base_hil_test.py:42 Нода /perception/road_lines_3d жива True

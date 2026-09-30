@@ -1,0 +1,2 @@
+Нода /perception/pollution_detector_cpp перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

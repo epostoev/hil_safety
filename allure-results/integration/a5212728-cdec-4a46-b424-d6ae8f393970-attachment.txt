@@ -1,0 +1,16 @@
+INFO     /safety/crash_detector:base_hil_test.py:91 === Начало теста для /safety/crash_detector ===
+INFO     /safety/crash_detector:base_hil_test.py:42 Нода /safety/crash_detector жива True
+INFO     /safety/crash_detector:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     /safety/crash_detector:base_hil_test.py:251 Docker exec: ps aux | grep 'crash_detector/lib/crash_detector/crash_detector' | grep -v grep
+INFO     /safety/crash_detector:base_hil_test.py:262 Найден PID: 2882405
+INFO     /safety/crash_detector:kill_fault_injection.py:82 PID=2882405
+INFO     /safety/crash_detector:kill_fault_injection.py:91 Stamp ДО kill: 1790267639.973526448
+INFO     /safety/crash_detector:base_hil_test.py:251 Docker exec: kill -6 2882405
+INFO     /safety/crash_detector:kill_fault_injection.py:95 kill -6 отправлен PID=2882405. Ждём появления /safety/crash_detector в error_code 131346...
+INFO     /safety/crash_detector:kill_fault_injection.py:111 Результат: success=True, reaction=12.406ms (12405847ns), nodes=['/safety/crash_detector', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     /safety/crash_detector:kill_fault_injection.py:133 Triggered errors: 2
+INFO     /safety/crash_detector:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     /safety/crash_detector:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/safety/crash_detector","/perception/camera_tracker_cpp","/sensing/cl
+INFO     /safety/crash_detector:base_hil_test.py:42 Нода /safety/crash_detector жива True
+INFO     /safety/crash_detector:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     /safety/crash_detector:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 12.406ms

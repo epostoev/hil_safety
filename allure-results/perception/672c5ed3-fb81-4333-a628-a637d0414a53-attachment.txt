@@ -1,0 +1,16 @@
+INFO     cloud_clusters_visualization:base_hil_test.py:91 === Начало теста для cloud_clusters_visualization ===
+INFO     cloud_clusters_visualization:base_hil_test.py:42 Нода /perception/visualization/cloud_clusters_visualization жива True
+INFO     cloud_clusters_visualization:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     cloud_clusters_visualization:base_hil_test.py:251 Docker exec: ps aux | grep 'perception_cloud_clusters_visualization/lib/perception_cloud_clusters_visualization/cloud_clusters_visualization' | grep -v grep
+INFO     cloud_clusters_visualization:base_hil_test.py:262 Найден PID: 339129
+INFO     cloud_clusters_visualization:kill_fault_injection.py:82 PID=339129
+INFO     cloud_clusters_visualization:kill_fault_injection.py:91 Stamp ДО kill: 1790325102.76340857
+INFO     cloud_clusters_visualization:base_hil_test.py:251 Docker exec: kill -6 339129
+INFO     cloud_clusters_visualization:kill_fault_injection.py:95 kill -6 отправлен PID=339129. Ждём появления /perception/visualization/cloud_clusters_visualization в error_code 131346...
+INFO     cloud_clusters_visualization:kill_fault_injection.py:111 Результат: success=True, reaction=10.03ms (10029630ns), nodes=['/perception/visualization/cloud_clusters_visualization', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     cloud_clusters_visualization:kill_fault_injection.py:133 Triggered errors: 2
+INFO     cloud_clusters_visualization:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     cloud_clusters_visualization:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/visualization/cloud_clusters_visualization","/perception/
+INFO     cloud_clusters_visualization:base_hil_test.py:42 Нода /perception/visualization/cloud_clusters_visualization жива True
+INFO     cloud_clusters_visualization:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     cloud_clusters_visualization:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.03ms

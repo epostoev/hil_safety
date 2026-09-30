@@ -1,0 +1,2 @@
+Нода /perception/ground_segmenter перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

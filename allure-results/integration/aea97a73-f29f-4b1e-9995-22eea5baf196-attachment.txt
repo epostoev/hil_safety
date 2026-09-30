@@ -1,0 +1,16 @@
+INFO     can_telemetry:base_hil_test.py:91 === Начало теста для can_telemetry ===
+INFO     can_telemetry:base_hil_test.py:42 Нода /can_telemetry жива True
+INFO     can_telemetry:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     can_telemetry:base_hil_test.py:251 Docker exec: ps aux | grep 'can_telemetry/lib/can_telemetry/can_telemetry_node' | grep -v grep
+INFO     can_telemetry:base_hil_test.py:262 Найден PID: 2814949
+INFO     can_telemetry:kill_fault_injection.py:82 PID=2814949
+INFO     can_telemetry:kill_fault_injection.py:91 Stamp ДО kill: 1790265948.673100184
+INFO     can_telemetry:base_hil_test.py:251 Docker exec: kill -6 2814949
+INFO     can_telemetry:kill_fault_injection.py:95 kill -6 отправлен PID=2814949. Ждём появления /can_telemetry в error_code 131346...
+INFO     can_telemetry:kill_fault_injection.py:111 Результат: success=True, reaction=10.021ms (10020606ns), nodes=['/can_telemetry', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     can_telemetry:kill_fault_injection.py:133 Triggered errors: 2
+INFO     can_telemetry:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     can_telemetry:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/can_telemetry","/perception/camera_tracker_cpp","/sensing/cloud_buil
+INFO     can_telemetry:base_hil_test.py:42 Нода /can_telemetry жива True
+INFO     can_telemetry:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     can_telemetry:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.021ms

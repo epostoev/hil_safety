@@ -1,0 +1,2 @@
+Нода /perception/lidar_blind_zones перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

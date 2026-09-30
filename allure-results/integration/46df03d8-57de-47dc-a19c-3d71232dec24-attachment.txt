@@ -1,0 +1,2 @@
+0x00010112 (65810): {"nodes":["/perception/camera_tracks_merger","/perception/road_lines_3d","/perce
+0x00020112 (131346): {"nodes":["/v2x_publisher_node","/perception/camera_tracker_cpp","/sensing/cloud

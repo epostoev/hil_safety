@@ -1,0 +1,3 @@
+TC ID:     TC-SENSING-PRE-012
+Node:      /camera_synchronizer
+Статус:    ALIVE ✅

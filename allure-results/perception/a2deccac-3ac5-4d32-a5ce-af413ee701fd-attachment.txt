@@ -1,0 +1,3 @@
+INFO     traffic_sign_localization:base_hil_test.py:91 === Начало теста для traffic_sign_localization ===
+INFO     traffic_sign_localization:base_hil_test.py:42 Нода /perception/traffic_sign_localization жива True
+INFO     traffic_sign_localization:base_hil_test.py:42 Нода /perception/traffic_sign_localization жива True

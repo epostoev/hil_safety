@@ -1,0 +1,3 @@
+INFO     multimodal_cpp:base_hil_test.py:91 === Начало теста для multimodal_cpp ===
+INFO     multimodal_cpp:base_hil_test.py:42 Нода /perception/multimodal_cpp жива True
+INFO     multimodal_cpp:base_hil_test.py:42 Нода /perception/multimodal_cpp жива True

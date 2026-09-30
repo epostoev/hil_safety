@@ -1,0 +1,2 @@
+Нода /perception/box_segmentation_fusion перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

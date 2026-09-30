@@ -1,0 +1,3 @@
+INFO     roi_selector:base_hil_test.py:91 === Начало теста для roi_selector ===
+INFO     roi_selector:base_hil_test.py:42 Нода /sensing/roi_selector жива True
+INFO     roi_selector:base_hil_test.py:42 Нода /sensing/roi_selector жива True

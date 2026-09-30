@@ -1,0 +1,4 @@
+INFO     prediction:base_hil_test.py:91 === Начало теста для prediction ===
+INFO     prediction:base_hil_test.py:42 Нода /prediction жива True
+INFO     prediction:base_hil_test.py:42 Нода /prediction жива True
+INFO     prediction:base_hil_test.py:94 === Завершение теста для prediction ===

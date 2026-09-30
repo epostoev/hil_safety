@@ -1,0 +1,16 @@
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:91 === Начало теста для camera_to_baselink_online_calibrator ===
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:42 Нода /calibration/rct/camera_to_baselink_online_calibrator жива True
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:251 Docker exec: ps aux | grep 'camera_to_baselink_online_calibrator/lib/camera_to_baselink_online_calibrator/camera_to_baselink_online_calibrator' | grep -v grep
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:262 Найден PID: 2661769
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:82 PID=2661769
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:91 Stamp ДО kill: 1790261925.284736156
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:251 Docker exec: kill -6 2661769
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:95 kill -6 отправлен PID=2661769. Ждём появления /calibration/rct/camera_to_baselink_online_calibrator в error_code 131346...
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:111 Результат: success=True, reaction=19.998ms (19998330ns), nodes=['/calibration/rct/camera_to_baselink_online_calibrator', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:133 Triggered errors: 2
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/calibration/rct/camera_to_baselink_online_calibrator","/perception/c
+INFO     camera_to_baselink_online_calibrator:base_hil_test.py:42 Нода /calibration/rct/camera_to_baselink_online_calibrator жива True
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     camera_to_baselink_online_calibrator:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 19.998ms

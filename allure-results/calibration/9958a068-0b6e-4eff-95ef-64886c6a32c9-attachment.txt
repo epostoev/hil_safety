@@ -1,0 +1,3 @@
+INFO     tf_estimation_node:base_hil_test.py:91 === Начало теста для tf_estimation_node ===
+INFO     tf_estimation_node:base_hil_test.py:42 Нода /calibration/rct/tf_estimation_node жива True
+INFO     tf_estimation_node:base_hil_test.py:42 Нода /calibration/rct/tf_estimation_node жива True

@@ -1,0 +1,2 @@
+Нода /localization_output_gateway_node перезапущена автоматически
+Fault Tolerance: ПОДТВЕРЖДЁН ✅

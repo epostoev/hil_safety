@@ -1,0 +1,18 @@
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:91 === Начало теста для road_surface_condition_detector_cpp ===
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:42 Нода /perception/road_surface_condition_detector_cpp жива True
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:251 Docker exec: ps aux | grep 'sat_perception_road_surface_condition_detector_cpp/lib/sat_perception_road_surface_condition_detector_cpp/road_surface_condition_detector_cpp_node' | grep -v grep
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:262 Найден PID: 459710
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:82 PID=459710
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:91 Stamp ДО kill: 1790328226.508093129
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:251 Docker exec: kill -6 459710
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:95 kill -6 отправлен PID=459710. Ждём появления /perception/road_surface_condition_detector_cpp в error_code 131346...
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:111 Результат: success=True, reaction=1770.623ms (1770622892ns), nodes=['/sensing/imu1/imu_node', '/chassis/chassis_bridge_udp_reader', '/perception/road_surface_condition_detector_cpp', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:133 Triggered errors: 4
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:135   0x0003FF12 (261906): {"/perception/camera_radar_fusion":{"/radar_roof_back_right/cluster_list":"Callb
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:135   0x0005FF12 (392978): {"/perception/camera_radar_fusion":{"/radar_roof_back_right/cluster_list":"Low m
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/cal
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/sensing/imu1/imu_node","/chassis/chassis_bridge_udp_reader","/percep
+INFO     road_surface_condition_detector_cpp:base_hil_test.py:42 Нода /perception/road_surface_condition_detector_cpp жива True
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     road_surface_condition_detector_cpp:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 1770.623ms

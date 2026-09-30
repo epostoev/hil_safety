@@ -1,0 +1,16 @@
+INFO     traffic_sign_localization:base_hil_test.py:91 === Начало теста для traffic_sign_localization ===
+INFO     traffic_sign_localization:base_hil_test.py:42 Нода /perception/traffic_sign_localization жива True
+INFO     traffic_sign_localization:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     traffic_sign_localization:base_hil_test.py:251 Docker exec: ps aux | grep 'traffic_sign_localization/lib/traffic_sign_localization/traffic_sign_localization' | grep -v grep
+INFO     traffic_sign_localization:base_hil_test.py:262 Найден PID: 318002
+INFO     traffic_sign_localization:kill_fault_injection.py:82 PID=318002
+INFO     traffic_sign_localization:kill_fault_injection.py:91 Stamp ДО kill: 1790324535.945946323
+INFO     traffic_sign_localization:base_hil_test.py:251 Docker exec: kill -6 318002
+INFO     traffic_sign_localization:kill_fault_injection.py:95 kill -6 отправлен PID=318002. Ждём появления /perception/traffic_sign_localization в error_code 131346...
+INFO     traffic_sign_localization:kill_fault_injection.py:111 Результат: success=True, reaction=10.836ms (10836344ns), nodes=['/perception/traffic_sign_localization', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     traffic_sign_localization:kill_fault_injection.py:133 Triggered errors: 2
+INFO     traffic_sign_localization:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/speed_limit_classifier","/perception/road_lines_3d","/per
+INFO     traffic_sign_localization:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/perception/traffic_sign_localization","/perception/camera_tracker_cp
+INFO     traffic_sign_localization:base_hil_test.py:42 Нода /perception/traffic_sign_localization жива True
+INFO     traffic_sign_localization:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     traffic_sign_localization:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 10.836ms

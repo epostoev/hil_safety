@@ -1,0 +1,17 @@
+INFO     rtk_provider_node:base_hil_test.py:91 === Начало теста для rtk_provider_node ===
+INFO     rtk_provider_node:base_hil_test.py:42 Нода /rtk_provider_node жива True
+INFO     rtk_provider_node:base_hil_test.py:42 Нода /rtk_provider_node жива True
+INFO     rtk_provider_node:kill_fault_injection.py:54 Baseline mrm_type=0
+INFO     rtk_provider_node:base_hil_test.py:251 Docker exec: ps aux | grep 'rtk_provider/lib/rtk_provider/rtk_provider_node' | grep -v grep
+INFO     rtk_provider_node:base_hil_test.py:262 Найден PID: 3576919
+INFO     rtk_provider_node:kill_fault_injection.py:82 PID=3576919
+INFO     rtk_provider_node:kill_fault_injection.py:91 Stamp ДО kill: 1790696245.613735828
+INFO     rtk_provider_node:base_hil_test.py:251 Docker exec: kill -6 3576919
+INFO     rtk_provider_node:kill_fault_injection.py:95 kill -6 отправлен PID=3576919. Ждём появления /rtk_provider_node в error_code 131346...
+INFO     rtk_provider_node:kill_fault_injection.py:111 Результат: success=True, reaction=9.992ms (9992063ns), nodes=['/rtk_provider_node', '/perception/camera_tracker_cpp', '/sensing/cloud_builder']
+INFO     rtk_provider_node:kill_fault_injection.py:133 Triggered errors: 2
+INFO     rtk_provider_node:kill_fault_injection.py:135   0x00010112 (65810): {"nodes":["/perception/road_lines_3d","/perception/camera_tracks_merger","/perce
+INFO     rtk_provider_node:kill_fault_injection.py:135   0x00020112 (131346): {"nodes":["/rtk_provider_node","/perception/camera_tracker_cpp","/sensing/cloud_
+INFO     rtk_provider_node:base_hil_test.py:42 Нода /rtk_provider_node жива True
+INFO     rtk_provider_node:kill_fault_injection.py:162 drive.py перезапустил ноду. Fault tolerance: ПОДТВЕРЖДЁН ✅
+INFO     rtk_provider_node:kill_fault_injection.py:208 Fault tolerance: ПОДТВЕРЖДЁН ✅ Время реакции MRM: 9.992ms
